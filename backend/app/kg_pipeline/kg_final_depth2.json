@@ -1,0 +1,1924 @@
+[
+  {
+    "code": "PHY_BASE",
+    "subject": "Physics",
+    "title": "Mechanics Introduction",
+    "description": "Scalars and vectors, basic quantities",
+    "difficulty_level": "base",
+    "objectives": [
+      "Describe the types of motion and their characteristics",
+      "Apply Newton's laws to solve problems involving forces and motion",
+      "Analyze the motion of objects using graphical and mathematical methods"
+    ],
+    "prerequisites": [
+      "PHY_KINEMATICS_BASICS",
+      "PHY_VECTORS"
+    ],
+    "next_topics": [
+      "PHY_MOTION_IN_A_STRAIGHT_LINE",
+      "PHY_MOTION_IN_A_PLANE",
+      "PHY_NEWTONS_LAWS_OF_MOTION",
+      "PHY_FRICTION"
+    ],
+    "keywords": [
+      "Mechanics",
+      "Motion",
+      "Forces",
+      "Newton's Laws",
+      "Friction",
+      "Kinematics"
+    ],
+    "estimated_hours": 8,
+    "created_at": "2025-10-20T14:21:22.228879"
+  },
+  {
+    "code": "CHM_BASE",
+    "subject": "Chemistry",
+    "title": "Atomic Structure",
+    "description": "Structure of atom and basic properties",
+    "difficulty_level": "base",
+    "objectives": [
+      "Describe the structure of an atom",
+      "Explain the different atomic models",
+      "Determine the electron configuration of an element"
+    ],
+    "prerequisites": [
+      "CHE_ELEMENTS_AND_COMPOUNDS",
+      "CHE_BASIC_CHEMISTRY_CONCEPTS"
+    ],
+    "next_topics": [
+      "CHE_ATOMIC_MODELS",
+      "CHE_ELECTRON_CONFIGURATION",
+      "CHE_ATOMIC_SPECTRA",
+      "CHE_ISOTOPES_AND_IONS"
+    ],
+    "keywords": [
+      "atom",
+      "electron",
+      "proton",
+      "neutron",
+      "nucleus",
+      "atomic number",
+      "mass number"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:22.228879"
+  },
+  {
+    "code": "BIO_BASE",
+    "subject": "Biology",
+    "title": "Cell Biology",
+    "description": "Cell structure and function",
+    "difficulty_level": "base",
+    "objectives": [
+      "Describe the structure and function of cell organelles",
+      "Explain the process of cell division and its significance",
+      "Compare and contrast different types of cellular transport"
+    ],
+    "prerequisites": [
+      "BIO_BIOLOGY_BASICS",
+      "BIO_CELLULAR_ORGANIZATION"
+    ],
+    "next_topics": [
+      "BIO_CELL_STRUCTURE",
+      "BIO_CELL_DIVISION",
+      "BIO_CELLULAR_TRANSPORT",
+      "BIO_CELL_SIGNALING"
+    ],
+    "keywords": [
+      "cell membrane",
+      "cytoplasm",
+      "mitochondria",
+      "nucleus",
+      "cell division",
+      "transport mechanisms"
+    ],
+    "estimated_hours": 6,
+    "created_at": "2025-10-20T14:21:22.228879"
+  },
+  {
+    "code": "PHY_MOTION_IN_A_STRAIGHT_LINE",
+    "subject": "Physics",
+    "title": "Motion in a Straight Line",
+    "description": "Subtopic of Mechanics Introduction",
+    "difficulty_level": "base",
+    "objectives": [
+      "Describe the difference between distance and displacement",
+      "Calculate speed, velocity, and acceleration from given data",
+      "Apply equations of motion to solve problems"
+    ],
+    "prerequisites": [
+      "PHY_BASIC_ALGEBRA",
+      "PHY_KINEMATICS_INTRODUCTION",
+      "PHY_BASE"
+    ],
+    "next_topics": [
+      "PHY_DISTANCE_AND_DISPLACEMENT",
+      "PHY_SPEED_AND_VELOCITY",
+      "PHY_ACCELERATION",
+      "PHY_EQUATIONS_OF_MOTION",
+      "PHY_MOTION_IN_A_PLANE"
+    ],
+    "keywords": [
+      "motion",
+      "velocity",
+      "acceleration",
+      "displacement",
+      "kinematics",
+      "equations of motion"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:25.976542"
+  },
+  {
+    "code": "PHY_MOTION_IN_A_PLANE",
+    "subject": "Physics",
+    "title": "Motion in a Plane",
+    "description": "Subtopic of Mechanics Introduction",
+    "difficulty_level": "base",
+    "objectives": [
+      "Analyze the motion of an object in a plane using vector components",
+      "Calculate the trajectory of a projectile under gravity",
+      "Understand the concept of relative motion in a plane"
+    ],
+    "prerequisites": [
+      "PHY_VECTORS",
+      "PHY_MOTION_IN_A_STRAIGHT_LINE",
+      "PHY_BASE"
+    ],
+    "next_topics": [
+      "PHY_PROJECTILE_MOTION",
+      "PHY_CIRCULAR_MOTION",
+      "PHY_RELATIVE_MOTION_IN_A_PLANE",
+      "PHY_VECTORS"
+    ],
+    "keywords": [
+      "Projectile Motion",
+      "Circular Motion",
+      "Relative Motion",
+      "Vectors",
+      "Trajectory",
+      "Plane Motion"
+    ],
+    "estimated_hours": 6,
+    "created_at": "2025-10-20T14:21:25.977147"
+  },
+  {
+    "code": "PHY_NEWTONS_LAWS_OF_MOTION",
+    "subject": "Physics",
+    "title": "Newton's Laws of Motion",
+    "description": "Subtopic of Mechanics Introduction",
+    "difficulty_level": "base",
+    "objectives": [
+      "State and explain Newton's three laws of motion",
+      "Apply Newton's laws to solve problems involving force and motion",
+      "Identify and analyze real-world examples of Newton's laws"
+    ],
+    "prerequisites": [
+      "PHY_FORCE",
+      "PHY_KINEMATICS",
+      "PHY_VECTORS",
+      "PHY_BASE"
+    ],
+    "next_topics": [
+      "PHY_FIRST_LAW_OF_MOTION",
+      "PHY_SECOND_LAW_OF_MOTION",
+      "PHY_THIRD_LAW_OF_MOTION",
+      "PHY_APPLICATIONS_OF_NEWTONS_LAWS"
+    ],
+    "keywords": [
+      "Newton's Laws",
+      "Motion",
+      "Force",
+      "Inertia",
+      "Acceleration",
+      "Action-Reaction"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:25.977147"
+  },
+  {
+    "code": "PHY_FRICTION",
+    "subject": "Physics",
+    "title": "Friction",
+    "description": "Subtopic of Mechanics Introduction",
+    "difficulty_level": "base",
+    "objectives": [
+      "Explain the concept of friction and its types",
+      "Identify factors that affect friction",
+      "Apply the concept of friction to real-life problems"
+    ],
+    "prerequisites": [
+      "PHY_MOTION",
+      "PHY_BASE",
+      "PHY_FORCES"
+    ],
+    "next_topics": [
+      "PHY_TYPES_OF_FRICTION",
+      "PHY_FACTORS_AFFECTING_FRICTION",
+      "PHY_FRICTION_IN_REAL_LIFE_SCENARIOS"
+    ],
+    "keywords": [
+      "Friction",
+      "Static Friction",
+      "Kinetic Friction",
+      "Force",
+      "Motion",
+      "Surface Roughness"
+    ],
+    "estimated_hours": 2,
+    "created_at": "2025-10-20T14:21:25.977147"
+  },
+  {
+    "code": "PHY_KINEMATICS_BASICS",
+    "subject": "Physics",
+    "title": "Kinematics Basics",
+    "description": "Prerequisite for Mechanics Introduction",
+    "difficulty_level": "base",
+    "objectives": [
+      "Describe the difference between distance and displacement",
+      "Calculate average speed and velocity",
+      "Interpret motion graphs"
+    ],
+    "prerequisites": [
+      "PHY_BASIC_ALGEBRA",
+      "PHY_MEASUREMENT_UNITS"
+    ],
+    "next_topics": [
+      "PHY_BASE",
+      "PHY_DISTANCE_AND_DISPLACEMENT",
+      "PHY_SPEED_AND_VELOCITY",
+      "PHY_ACCELERATION",
+      "PHY_GRAPHICAL_ANALYSIS_OF_MOTION"
+    ],
+    "keywords": [
+      "kinematics",
+      "motion",
+      "velocity",
+      "acceleration",
+      "displacement"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:25.977147"
+  },
+  {
+    "code": "PHY_VECTORS",
+    "subject": "Physics",
+    "title": "Vectors",
+    "description": "Prerequisite for Mechanics Introduction",
+    "difficulty_level": "base",
+    "objectives": [
+      "Represent physical quantities as vectors",
+      "Perform vector operations (addition, subtraction, scalar multiplication)",
+      "Resolve vectors into components"
+    ],
+    "prerequisites": [
+      "PHY_BASIC_ALGEBRA",
+      "PHY_MOTION_IN_A_PLANE"
+    ],
+    "next_topics": [
+      "PHY_BASE",
+      "PHY_MOTION_IN_A_PLANE",
+      "PHY_NEWTONS_LAWS_OF_MOTION",
+      "PHY_VECTOR_ADDITION_AND_SUBTRACTION",
+      "PHY_SCALAR_AND_VECTOR_PRODUCTS",
+      "PHY_VECTOR_COMPONENTS_AND_RESOLUTION"
+    ],
+    "keywords": [
+      "Vector",
+      "Scalar",
+      "Magnitude",
+      "Direction",
+      "Resolution",
+      "Components"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:25.977147"
+  },
+  {
+    "code": "CHE_ATOMIC_MODELS",
+    "subject": "Chemistry",
+    "title": "Atomic Models",
+    "description": "Subtopic of Atomic Structure",
+    "difficulty_level": "base",
+    "objectives": [
+      "Describe the main features of different atomic models",
+      "Explain the limitations of each atomic model",
+      "Compare and contrast different atomic models"
+    ],
+    "prerequisites": [
+      "CHM_BASE",
+      "CHE_ELEMENTS_AND_COMPOUNDS",
+      "CHE_STRUCTURE_OF_MATTER"
+    ],
+    "next_topics": [
+      "CHE_DALTONS_ATOMIC_THEORY",
+      "CHE_THOMSONS_MODEL",
+      "CHE_RUTHERFORDS_MODEL",
+      "CHE_BOHRS_MODEL",
+      "CHE_QUANTUM_MECHANICAL_MODEL"
+    ],
+    "keywords": [
+      "Atomic Theory",
+      "Dalton",
+      "Thomson",
+      "Rutherford",
+      "Bohr",
+      "Quantum Mechanics",
+      "Atomic Structure"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:29.572191"
+  },
+  {
+    "code": "CHE_ELECTRON_CONFIGURATION",
+    "subject": "Chemistry",
+    "title": "Electron Configuration",
+    "description": "Subtopic of Atomic Structure",
+    "difficulty_level": "base",
+    "objectives": [
+      "Write the electron configuration for a given atom",
+      "Explain the Aufbau principle and its application",
+      "Apply Hund's rule to determine electron configuration"
+    ],
+    "prerequisites": [
+      "CHM_BASE",
+      "CHE_PERIODIC_TABLE_BASICS",
+      "CHE_ATOMIC_STRUCTURE"
+    ],
+    "next_topics": [
+      "CHE_ATOMIC_ORBITALS",
+      "CHE_AUFBAU_PRINCIPLE",
+      "CHE_HUNDS_RULE",
+      "CHE_ELECTRON_CONFIGURATION_NOTATION"
+    ],
+    "keywords": [
+      "Electron Configuration",
+      "Atomic Orbitals",
+      "Aufbau Principle",
+      "Hund's Rule",
+      "Pauli Exclusion Principle"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:29.572191"
+  },
+  {
+    "code": "CHE_ATOMIC_SPECTRA",
+    "subject": "Chemistry",
+    "title": "Atomic Spectra",
+    "description": "Subtopic of Atomic Structure",
+    "difficulty_level": "base",
+    "objectives": [
+      "Explain the origin of atomic spectra",
+      "Describe the characteristics of emission and absorption spectra",
+      "Apply Bohr's model to explain the line spectra of hydrogen atom"
+    ],
+    "prerequisites": [
+      "CHM_BASE",
+      "CHE_ELECTRONS_IN_ATOMS",
+      "CHE_ATOMIC_STRUCTURE"
+    ],
+    "next_topics": [
+      "CHE_EMISSION_SPECTRA",
+      "CHE_ABSORPTION_SPECTRA",
+      "CHE_LINE_SPECTRA_OF_HYDROGEN_ATOM",
+      "CHE_BOHRS_MODEL_AND_SPECTRA"
+    ],
+    "keywords": [
+      "Atomic Spectra",
+      "Emission Spectra",
+      "Absorption Spectra",
+      "Bohr's Model",
+      "Line Spectra",
+      "Hydrogen Atom"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:29.572191"
+  },
+  {
+    "code": "CHE_ISOTOPES_AND_IONS",
+    "subject": "Chemistry",
+    "title": "Isotopes and Ions",
+    "description": "Subtopic of Atomic Structure",
+    "difficulty_level": "base",
+    "objectives": [
+      "Identify and explain isotopes and ions",
+      "Determine the number of protons, neutrons, and electrons in isotopes and ions",
+      "Understand the difference between isotopes and ions"
+    ],
+    "prerequisites": [
+      "CHM_BASE",
+      "CHE_PERIODIC_TABLE_BASICS",
+      "CHE_ATOMIC_STRUCTURE"
+    ],
+    "next_topics": [
+      "CHE_DEFINITION_AND_EXAMPLES_OF_ISOTOPES",
+      "CHE_DEFINITION_AND_EXAMPLES_OF_IONS",
+      "CHE_ISOTOPIC_NOTATION_AND_ION_CHARGE",
+      "CHE_PROPERTIES_AND_USES_OF_ISOTOPES_AND_IONS"
+    ],
+    "keywords": [
+      "Isotopes",
+      "Ions",
+      "Atomic Structure",
+      "Protons",
+      "Neutrons",
+      "Electrons",
+      "Ion Charge"
+    ],
+    "estimated_hours": 2,
+    "created_at": "2025-10-20T14:21:29.572191"
+  },
+  {
+    "code": "CHE_ELEMENTS_AND_COMPOUNDS",
+    "subject": "Chemistry",
+    "title": "Elements and Compounds",
+    "description": "Prerequisite for Atomic Structure",
+    "difficulty_level": "base",
+    "objectives": [
+      "Identify and describe the difference between elements and compounds",
+      "Explain how elements combine to form compounds",
+      "Classify substances as elements or compounds based on their properties"
+    ],
+    "prerequisites": [
+      "CHE_BASIC_CHEMISTRY_CONCEPTS",
+      "CHE_ATOMIC_STRUCTURE"
+    ],
+    "next_topics": [
+      "CHM_BASE",
+      "CHE_ATOMIC_MODELS",
+      "CHE_ATOMIC_STRUCTURE_AND_ELEMENTS",
+      "CHE_TYPES_OF_COMPOUNDS",
+      "CHE_CHEMICAL_BONDING",
+      "CHE_PROPERTIES_OF_ELEMENTS_AND_COMPOUNDS"
+    ],
+    "keywords": [
+      "Elements",
+      "Compounds",
+      "Chemical Bonding",
+      "Atomic Structure",
+      "Chemical Properties"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:29.572191"
+  },
+  {
+    "code": "CHE_BASIC_CHEMISTRY_CONCEPTS",
+    "subject": "Chemistry",
+    "title": "Basic Chemistry Concepts",
+    "description": "Prerequisite for Atomic Structure",
+    "difficulty_level": "base",
+    "objectives": [
+      "Explain the structure of atoms and their properties",
+      "Describe the types of chemical bonds and their formation",
+      "Balance simple chemical equations"
+    ],
+    "prerequisites": [
+      "CHE_INTRODUCTION_TO_SCIENCE",
+      "CHE_BASIC_PHYSICS"
+    ],
+    "next_topics": [
+      "CHM_BASE",
+      "CHE_ELEMENTS_AND_COMPOUNDS",
+      "CHE_ATOMIC_STRUCTURE",
+      "CHE_CHEMICAL_BONDING",
+      "CHE_CHEMICAL_REACTIONS",
+      "CHE_STOICHIOMETRY"
+    ],
+    "keywords": [
+      "atom",
+      "element",
+      "compound",
+      "chemical reaction",
+      "stoichiometry"
+    ],
+    "estimated_hours": 8,
+    "created_at": "2025-10-20T14:21:29.572191"
+  },
+  {
+    "code": "BIO_CELL_STRUCTURE",
+    "subject": "Biology",
+    "title": "Cell Structure",
+    "description": "Subtopic of Cell Biology",
+    "difficulty_level": "base",
+    "objectives": [
+      "Describe the structure and function of cell organelles",
+      "Explain the role of the cell membrane in regulating cellular activities",
+      "Identify the components of the cell and their functions"
+    ],
+    "prerequisites": [
+      "BIO_BASE",
+      "BIO_MICROSCOPY",
+      "BIO_BASIC_BIOLOGY"
+    ],
+    "next_topics": [
+      "BIO_CELL_MEMBRANE",
+      "BIO_CYTOPLASM_AND_CYTOSKELETON",
+      "BIO_NUCLEUS_AND_GENETIC_MATERIAL",
+      "BIO_MITOCHONDRIA_AND_CELLULAR_RESPIRATION",
+      "BIO_CELL_DIVISION",
+      "BIO_CELLULAR_TRANSPORT",
+      "BIO_CELL_SIGNALING"
+    ],
+    "keywords": [
+      "Cell",
+      "Organelles",
+      "Cell Membrane",
+      "Nucleus",
+      "Mitochondria",
+      "Cytoplasm"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:34.072662"
+  },
+  {
+    "code": "BIO_CELL_DIVISION",
+    "subject": "Biology",
+    "title": "Cell Division",
+    "description": "Subtopic of Cell Biology",
+    "difficulty_level": "base",
+    "objectives": [
+      "Explain the process of mitosis and meiosis",
+      "Describe the significance of cell cycle regulation",
+      "Compare and contrast mitosis and meiosis"
+    ],
+    "prerequisites": [
+      "BIO_BASE",
+      "BIO_CELL_STRUCTURE",
+      "BIO_GENETICS_BASICS"
+    ],
+    "next_topics": [
+      "BIO_MITOSIS",
+      "BIO_MEIOSIS",
+      "BIO_CELL_CYCLE_REGULATION",
+      "BIO_CYTOKINESIS"
+    ],
+    "keywords": [
+      "Mitosis",
+      "Meiosis",
+      "Cell Cycle",
+      "Cytokinesis",
+      "Chromosomes",
+      "Genetic Variation"
+    ],
+    "estimated_hours": 6,
+    "created_at": "2025-10-20T14:21:34.072662"
+  },
+  {
+    "code": "BIO_CELLULAR_TRANSPORT",
+    "subject": "Biology",
+    "title": "Cellular Transport",
+    "description": "Subtopic of Cell Biology",
+    "difficulty_level": "base",
+    "objectives": [
+      "Explain the different types of cellular transport",
+      "Compare and contrast passive and active transport",
+      "Describe the role of osmosis and diffusion in cellular processes"
+    ],
+    "prerequisites": [
+      "BIO_BIOLOGICAL_MOLECULES",
+      "BIO_BASE",
+      "BIO_CELL_STRUCTURE"
+    ],
+    "next_topics": [
+      "BIO_PASSIVE_TRANSPORT",
+      "BIO_ACTIVE_TRANSPORT",
+      "BIO_OSMOSIS_AND_DIFFUSION",
+      "BIO_ENDOCYTOSIS_AND_EXOCYTOSIS"
+    ],
+    "keywords": [
+      "cell membrane",
+      "transport mechanisms",
+      "osmosis",
+      "diffusion",
+      "active transport",
+      "passive transport"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:34.072662"
+  },
+  {
+    "code": "BIO_CELL_SIGNALING",
+    "subject": "Biology",
+    "title": "Cell Signaling",
+    "description": "Subtopic of Cell Biology",
+    "difficulty_level": "base",
+    "objectives": [
+      "Explain the different types of cell signaling",
+      "Describe the role of signaling molecules and receptors",
+      "Outline the major steps in a signal transduction pathway"
+    ],
+    "prerequisites": [
+      "BIO_BIOLOGICAL_MOLECULES",
+      "BIO_BASE",
+      "BIO_CELL_STRUCTURE",
+      "BIO_CELL_MEMBRANE"
+    ],
+    "next_topics": [
+      "BIO_TYPES_OF_CELL_SIGNALING",
+      "BIO_SIGNALING_MOLECULES_AND_RECEPTORS",
+      "BIO_SIGNAL_TRANSDUCTION_PATHWAYS",
+      "BIO_CELLULAR_RESPONSE_TO_SIGNALS"
+    ],
+    "keywords": [
+      "cell signaling",
+      "signal transduction",
+      "receptors",
+      "signaling molecules",
+      "cell communication"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:34.072662"
+  },
+  {
+    "code": "BIO_BIOLOGY_BASICS",
+    "subject": "Biology",
+    "title": "Biology Basics",
+    "description": "Prerequisite for Cell Biology",
+    "difficulty_level": "base",
+    "objectives": [
+      "Explain the structure and function of cells",
+      "Describe the process of cell division",
+      "Understand the basic principles of genetics"
+    ],
+    "prerequisites": [
+      "BIO_BASIC_CHEMISTRY",
+      "BIO_SCIENTIFIC_METHOD"
+    ],
+    "next_topics": [
+      "BIO_BASE",
+      "BIO_CELL_STRUCTURE",
+      "BIO_CELL_DIVISION",
+      "BIO_GENETICS_BASICS",
+      "BIO_EVOLUTION_INTRODUCTION"
+    ],
+    "keywords": [
+      "cells",
+      "genetics",
+      "evolution",
+      "biology",
+      "cell division",
+      "DNA"
+    ],
+    "estimated_hours": 6,
+    "created_at": "2025-10-20T14:21:34.072662"
+  },
+  {
+    "code": "BIO_CELLULAR_ORGANIZATION",
+    "subject": "Biology",
+    "title": "Cellular Organization",
+    "description": "Prerequisite for Cell Biology",
+    "difficulty_level": "base",
+    "objectives": [
+      "Describe the structure and function of cell organelles",
+      "Explain the process of cellular transport across the cell membrane",
+      "Compare and contrast unicellular and multicellular organisms"
+    ],
+    "prerequisites": [
+      "BIO_CELL_BASICS",
+      "BIO_BASIC_BIOLOGY"
+    ],
+    "next_topics": [
+      "BIO_BASE",
+      "BIO_CELL_STRUCTURE",
+      "BIO_CELL_MEMBRANE_AND_TRANSPORT",
+      "BIO_CYTOPLASM_AND_ORGANELLES",
+      "BIO_CELLULAR_ORGANIZATION_IN_UNICELLULAR_AND"
+    ],
+    "keywords": [
+      "Cell",
+      "Organelles",
+      "Cell Membrane",
+      "Cytoplasm",
+      "Unicellular",
+      "Multicellular"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T14:21:34.072662"
+  },
+  {
+    "code": "PHY_DISTANCE_AND_DISPLACEMENT",
+    "subject": "Physics",
+    "title": "Distance and Displacement",
+    "description": "Subtopic of Motion in a Straight Line",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_MOTION_IN_A_STRAIGHT_LINE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:38.401079"
+  },
+  {
+    "code": "PHY_SPEED_AND_VELOCITY",
+    "subject": "Physics",
+    "title": "Speed and Velocity",
+    "description": "Subtopic of Motion in a Straight Line",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_MOTION_IN_A_STRAIGHT_LINE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:38.401079"
+  },
+  {
+    "code": "PHY_ACCELERATION",
+    "subject": "Physics",
+    "title": "Acceleration",
+    "description": "Subtopic of Motion in a Straight Line",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_MOTION_IN_A_STRAIGHT_LINE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:38.401079"
+  },
+  {
+    "code": "PHY_EQUATIONS_OF_MOTION",
+    "subject": "Physics",
+    "title": "Equations of Motion",
+    "description": "Subtopic of Motion in a Straight Line",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_MOTION_IN_A_STRAIGHT_LINE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:38.401079"
+  },
+  {
+    "code": "PHY_KINEMATICS_INTRODUCTION",
+    "subject": "Physics",
+    "title": "Kinematics Introduction",
+    "description": "Prerequisite for Motion in a Straight Line",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_MOTION_IN_A_STRAIGHT_LINE"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:21:38.401079"
+  },
+  {
+    "code": "PHY_BASIC_ALGEBRA",
+    "subject": "Physics",
+    "title": "Basic Algebra",
+    "description": "Prerequisite for Motion in a Straight Line",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_MOTION_IN_A_STRAIGHT_LINE",
+      "PHY_KINEMATICS_BASICS",
+      "PHY_VECTORS"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:21:38.401079"
+  },
+  {
+    "code": "PHY_PROJECTILE_MOTION",
+    "subject": "Physics",
+    "title": "Projectile Motion",
+    "description": "Subtopic of Motion in a Plane",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_MOTION_IN_A_PLANE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:42.516929"
+  },
+  {
+    "code": "PHY_CIRCULAR_MOTION",
+    "subject": "Physics",
+    "title": "Circular Motion",
+    "description": "Subtopic of Motion in a Plane",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_MOTION_IN_A_PLANE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:42.516929"
+  },
+  {
+    "code": "PHY_RELATIVE_MOTION_IN_A_PLANE",
+    "subject": "Physics",
+    "title": "Relative Motion in a Plane",
+    "description": "Subtopic of Motion in a Plane",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_MOTION_IN_A_PLANE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:42.516929"
+  },
+  {
+    "code": "PHY_FIRST_LAW_OF_MOTION",
+    "subject": "Physics",
+    "title": "First Law of Motion",
+    "description": "Subtopic of Newton's Laws of Motion",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_NEWTONS_LAWS_OF_MOTION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:47.180042"
+  },
+  {
+    "code": "PHY_SECOND_LAW_OF_MOTION",
+    "subject": "Physics",
+    "title": "Second Law of Motion",
+    "description": "Subtopic of Newton's Laws of Motion",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_NEWTONS_LAWS_OF_MOTION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:47.180042"
+  },
+  {
+    "code": "PHY_THIRD_LAW_OF_MOTION",
+    "subject": "Physics",
+    "title": "Third Law of Motion",
+    "description": "Subtopic of Newton's Laws of Motion",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_NEWTONS_LAWS_OF_MOTION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:47.180042"
+  },
+  {
+    "code": "PHY_APPLICATIONS_OF_NEWTONS_LAWS",
+    "subject": "Physics",
+    "title": "Applications of Newton's Laws",
+    "description": "Subtopic of Newton's Laws of Motion",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_NEWTONS_LAWS_OF_MOTION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:47.180042"
+  },
+  {
+    "code": "PHY_KINEMATICS",
+    "subject": "Physics",
+    "title": "Kinematics",
+    "description": "Prerequisite for Newton's Laws of Motion",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_NEWTONS_LAWS_OF_MOTION"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:21:47.180042"
+  },
+  {
+    "code": "PHY_FORCE",
+    "subject": "Physics",
+    "title": "Force",
+    "description": "Prerequisite for Newton's Laws of Motion",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_NEWTONS_LAWS_OF_MOTION"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:21:47.180042"
+  },
+  {
+    "code": "PHY_TYPES_OF_FRICTION",
+    "subject": "Physics",
+    "title": "Types of Friction",
+    "description": "Subtopic of Friction",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_FRICTION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:51.567336"
+  },
+  {
+    "code": "PHY_FACTORS_AFFECTING_FRICTION",
+    "subject": "Physics",
+    "title": "Factors Affecting Friction",
+    "description": "Subtopic of Friction",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_FRICTION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:51.567336"
+  },
+  {
+    "code": "PHY_FRICTION_IN_REAL_LIFE_SCENARIOS",
+    "subject": "Physics",
+    "title": "Friction in Real-Life Scenarios",
+    "description": "Subtopic of Friction",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_FRICTION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:51.567336"
+  },
+  {
+    "code": "PHY_FORCES",
+    "subject": "Physics",
+    "title": "Forces",
+    "description": "Prerequisite for Friction",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_FRICTION"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:21:51.567336"
+  },
+  {
+    "code": "PHY_MOTION",
+    "subject": "Physics",
+    "title": "Motion",
+    "description": "Prerequisite for Friction",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_FRICTION"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:21:51.567336"
+  },
+  {
+    "code": "PHY_GRAPHICAL_ANALYSIS_OF_MOTION",
+    "subject": "Physics",
+    "title": "Graphical Analysis of Motion",
+    "description": "Subtopic of Kinematics Basics",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_KINEMATICS_BASICS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:55.601238"
+  },
+  {
+    "code": "PHY_MEASUREMENT_UNITS",
+    "subject": "Physics",
+    "title": "Measurement Units",
+    "description": "Prerequisite for Kinematics Basics",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_KINEMATICS_BASICS"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:21:55.603118"
+  },
+  {
+    "code": "PHY_VECTOR_ADDITION_AND_SUBTRACTION",
+    "subject": "Physics",
+    "title": "Vector Addition and Subtraction",
+    "description": "Subtopic of Vectors",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_VECTORS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:59.684886"
+  },
+  {
+    "code": "PHY_SCALAR_AND_VECTOR_PRODUCTS",
+    "subject": "Physics",
+    "title": "Scalar and Vector Products",
+    "description": "Subtopic of Vectors",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_VECTORS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:59.684886"
+  },
+  {
+    "code": "PHY_VECTOR_COMPONENTS_AND_RESOLUTION",
+    "subject": "Physics",
+    "title": "Vector Components and Resolution",
+    "description": "Subtopic of Vectors",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_VECTORS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:21:59.684886"
+  },
+  {
+    "code": "CHE_DALTONS_ATOMIC_THEORY",
+    "subject": "Chemistry",
+    "title": "Dalton's Atomic Theory",
+    "description": "Subtopic of Atomic Models",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ATOMIC_MODELS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:03.640498"
+  },
+  {
+    "code": "CHE_THOMSONS_MODEL",
+    "subject": "Chemistry",
+    "title": "Thomson's Model",
+    "description": "Subtopic of Atomic Models",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ATOMIC_MODELS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:03.640498"
+  },
+  {
+    "code": "CHE_RUTHERFORDS_MODEL",
+    "subject": "Chemistry",
+    "title": "Rutherford's Model",
+    "description": "Subtopic of Atomic Models",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ATOMIC_MODELS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:03.640498"
+  },
+  {
+    "code": "CHE_BOHRS_MODEL",
+    "subject": "Chemistry",
+    "title": "Bohr's Model",
+    "description": "Subtopic of Atomic Models",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ATOMIC_MODELS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:03.640498"
+  },
+  {
+    "code": "CHE_QUANTUM_MECHANICAL_MODEL",
+    "subject": "Chemistry",
+    "title": "Quantum Mechanical Model",
+    "description": "Subtopic of Atomic Models",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ATOMIC_MODELS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:03.640498"
+  },
+  {
+    "code": "CHE_STRUCTURE_OF_MATTER",
+    "subject": "Chemistry",
+    "title": "Structure of Matter",
+    "description": "Prerequisite for Atomic Models",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "CHE_ATOMIC_MODELS"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:03.640498"
+  },
+  {
+    "code": "CHE_ATOMIC_ORBITALS",
+    "subject": "Chemistry",
+    "title": "Atomic Orbitals",
+    "description": "Subtopic of Electron Configuration",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ELECTRON_CONFIGURATION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:08.154741"
+  },
+  {
+    "code": "CHE_AUFBAU_PRINCIPLE",
+    "subject": "Chemistry",
+    "title": "Aufbau Principle",
+    "description": "Subtopic of Electron Configuration",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ELECTRON_CONFIGURATION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:08.163246"
+  },
+  {
+    "code": "CHE_HUNDS_RULE",
+    "subject": "Chemistry",
+    "title": "Hund's Rule",
+    "description": "Subtopic of Electron Configuration",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ELECTRON_CONFIGURATION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:08.163246"
+  },
+  {
+    "code": "CHE_ELECTRON_CONFIGURATION_NOTATION",
+    "subject": "Chemistry",
+    "title": "Electron Configuration Notation",
+    "description": "Subtopic of Electron Configuration",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ELECTRON_CONFIGURATION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:08.163246"
+  },
+  {
+    "code": "CHE_ATOMIC_STRUCTURE",
+    "subject": "Chemistry",
+    "title": "Atomic Structure",
+    "description": "Prerequisite for Electron Configuration",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "CHE_ELECTRON_CONFIGURATION",
+      "CHE_ATOMIC_SPECTRA",
+      "CHE_ISOTOPES_AND_IONS",
+      "CHE_ELEMENTS_AND_COMPOUNDS"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:08.163246"
+  },
+  {
+    "code": "CHE_PERIODIC_TABLE_BASICS",
+    "subject": "Chemistry",
+    "title": "Periodic Table Basics",
+    "description": "Prerequisite for Electron Configuration",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "CHE_ELECTRON_CONFIGURATION",
+      "CHE_ISOTOPES_AND_IONS"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:08.163246"
+  },
+  {
+    "code": "CHE_EMISSION_SPECTRA",
+    "subject": "Chemistry",
+    "title": "Emission Spectra",
+    "description": "Subtopic of Atomic Spectra",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ATOMIC_SPECTRA"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:12.486349"
+  },
+  {
+    "code": "CHE_ABSORPTION_SPECTRA",
+    "subject": "Chemistry",
+    "title": "Absorption Spectra",
+    "description": "Subtopic of Atomic Spectra",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ATOMIC_SPECTRA"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:12.486349"
+  },
+  {
+    "code": "CHE_LINE_SPECTRA_OF_HYDROGEN_ATOM",
+    "subject": "Chemistry",
+    "title": "Line Spectra of Hydrogen Atom",
+    "description": "Subtopic of Atomic Spectra",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ATOMIC_SPECTRA"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:12.486349"
+  },
+  {
+    "code": "CHE_BOHRS_MODEL_AND_SPECTRA",
+    "subject": "Chemistry",
+    "title": "Bohr's Model and Spectra",
+    "description": "Subtopic of Atomic Spectra",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ATOMIC_SPECTRA"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:12.486349"
+  },
+  {
+    "code": "CHE_ELECTRONS_IN_ATOMS",
+    "subject": "Chemistry",
+    "title": "Electrons in Atoms",
+    "description": "Prerequisite for Atomic Spectra",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "CHE_ATOMIC_SPECTRA"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:12.486349"
+  },
+  {
+    "code": "CHE_DEFINITION_AND_EXAMPLES_OF_ISOTOPES",
+    "subject": "Chemistry",
+    "title": "Definition and Examples of Isotopes",
+    "description": "Subtopic of Isotopes and Ions",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ISOTOPES_AND_IONS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:17.983078"
+  },
+  {
+    "code": "CHE_DEFINITION_AND_EXAMPLES_OF_IONS",
+    "subject": "Chemistry",
+    "title": "Definition and Examples of Ions",
+    "description": "Subtopic of Isotopes and Ions",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ISOTOPES_AND_IONS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:17.983078"
+  },
+  {
+    "code": "CHE_ISOTOPIC_NOTATION_AND_ION_CHARGE",
+    "subject": "Chemistry",
+    "title": "Isotopic Notation and Ion Charge",
+    "description": "Subtopic of Isotopes and Ions",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ISOTOPES_AND_IONS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:17.983078"
+  },
+  {
+    "code": "CHE_PROPERTIES_AND_USES_OF_ISOTOPES_AND_IONS",
+    "subject": "Chemistry",
+    "title": "Properties and Uses of Isotopes and Ions",
+    "description": "Subtopic of Isotopes and Ions",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ISOTOPES_AND_IONS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:17.983078"
+  },
+  {
+    "code": "CHE_ATOMIC_STRUCTURE_AND_ELEMENTS",
+    "subject": "Chemistry",
+    "title": "Atomic Structure and Elements",
+    "description": "Subtopic of Elements and Compounds",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ELEMENTS_AND_COMPOUNDS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:22.226991"
+  },
+  {
+    "code": "CHE_TYPES_OF_COMPOUNDS",
+    "subject": "Chemistry",
+    "title": "Types of Compounds",
+    "description": "Subtopic of Elements and Compounds",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ELEMENTS_AND_COMPOUNDS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:22.226991"
+  },
+  {
+    "code": "CHE_CHEMICAL_BONDING",
+    "subject": "Chemistry",
+    "title": "Chemical Bonding",
+    "description": "Subtopic of Elements and Compounds",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ELEMENTS_AND_COMPOUNDS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:22.226991"
+  },
+  {
+    "code": "CHE_PROPERTIES_OF_ELEMENTS_AND_COMPOUNDS",
+    "subject": "Chemistry",
+    "title": "Properties of Elements and Compounds",
+    "description": "Subtopic of Elements and Compounds",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_ELEMENTS_AND_COMPOUNDS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:22.226991"
+  },
+  {
+    "code": "CHE_CHEMICAL_REACTIONS",
+    "subject": "Chemistry",
+    "title": "Chemical Reactions",
+    "description": "Subtopic of Basic Chemistry Concepts",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_BASIC_CHEMISTRY_CONCEPTS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:26.503237"
+  },
+  {
+    "code": "CHE_STOICHIOMETRY",
+    "subject": "Chemistry",
+    "title": "Stoichiometry",
+    "description": "Subtopic of Basic Chemistry Concepts",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "CHE_BASIC_CHEMISTRY_CONCEPTS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:26.503237"
+  },
+  {
+    "code": "CHE_INTRODUCTION_TO_SCIENCE",
+    "subject": "Chemistry",
+    "title": "Introduction to Science",
+    "description": "Prerequisite for Basic Chemistry Concepts",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "CHE_BASIC_CHEMISTRY_CONCEPTS"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:26.503237"
+  },
+  {
+    "code": "CHE_BASIC_PHYSICS",
+    "subject": "Chemistry",
+    "title": "Basic Physics",
+    "description": "Prerequisite for Basic Chemistry Concepts",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "CHE_BASIC_CHEMISTRY_CONCEPTS"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:26.503237"
+  },
+  {
+    "code": "BIO_CELL_MEMBRANE",
+    "subject": "Biology",
+    "title": "Cell Membrane",
+    "description": "Subtopic of Cell Structure",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_STRUCTURE"
+    ],
+    "next_topics": [
+      "BIO_CELL_SIGNALING"
+    ],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:31.044547"
+  },
+  {
+    "code": "BIO_CYTOPLASM_AND_CYTOSKELETON",
+    "subject": "Biology",
+    "title": "Cytoplasm and Cytoskeleton",
+    "description": "Subtopic of Cell Structure",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_STRUCTURE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:31.044547"
+  },
+  {
+    "code": "BIO_NUCLEUS_AND_GENETIC_MATERIAL",
+    "subject": "Biology",
+    "title": "Nucleus and Genetic Material",
+    "description": "Subtopic of Cell Structure",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_STRUCTURE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:31.044547"
+  },
+  {
+    "code": "BIO_MITOCHONDRIA_AND_CELLULAR_RESPIRATION",
+    "subject": "Biology",
+    "title": "Mitochondria and Cellular Respiration",
+    "description": "Subtopic of Cell Structure",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_STRUCTURE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:31.044547"
+  },
+  {
+    "code": "BIO_BASIC_BIOLOGY",
+    "subject": "Biology",
+    "title": "Basic Biology",
+    "description": "Prerequisite for Cell Structure",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "BIO_CELL_STRUCTURE",
+      "BIO_CELLULAR_ORGANIZATION"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:31.044547"
+  },
+  {
+    "code": "BIO_MICROSCOPY",
+    "subject": "Biology",
+    "title": "Microscopy",
+    "description": "Prerequisite for Cell Structure",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "BIO_CELL_STRUCTURE"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:31.044547"
+  },
+  {
+    "code": "BIO_MITOSIS",
+    "subject": "Biology",
+    "title": "Mitosis",
+    "description": "Subtopic of Cell Division",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_DIVISION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:35.658058"
+  },
+  {
+    "code": "BIO_MEIOSIS",
+    "subject": "Biology",
+    "title": "Meiosis",
+    "description": "Subtopic of Cell Division",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_DIVISION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:35.658058"
+  },
+  {
+    "code": "BIO_CELL_CYCLE_REGULATION",
+    "subject": "Biology",
+    "title": "Cell Cycle Regulation",
+    "description": "Subtopic of Cell Division",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_DIVISION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:35.658058"
+  },
+  {
+    "code": "BIO_CYTOKINESIS",
+    "subject": "Biology",
+    "title": "Cytokinesis",
+    "description": "Subtopic of Cell Division",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_DIVISION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:35.658058"
+  },
+  {
+    "code": "BIO_GENETICS_BASICS",
+    "subject": "Biology",
+    "title": "Genetics Basics",
+    "description": "Prerequisite for Cell Division",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "BIO_CELL_DIVISION"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:35.658058"
+  },
+  {
+    "code": "BIO_PASSIVE_TRANSPORT",
+    "subject": "Biology",
+    "title": "Passive Transport",
+    "description": "Subtopic of Cellular Transport",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELLULAR_TRANSPORT"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:40.018434"
+  },
+  {
+    "code": "BIO_ACTIVE_TRANSPORT",
+    "subject": "Biology",
+    "title": "Active Transport",
+    "description": "Subtopic of Cellular Transport",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELLULAR_TRANSPORT"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:40.018434"
+  },
+  {
+    "code": "BIO_OSMOSIS_AND_DIFFUSION",
+    "subject": "Biology",
+    "title": "Osmosis and Diffusion",
+    "description": "Subtopic of Cellular Transport",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELLULAR_TRANSPORT"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:40.018434"
+  },
+  {
+    "code": "BIO_ENDOCYTOSIS_AND_EXOCYTOSIS",
+    "subject": "Biology",
+    "title": "Endocytosis and Exocytosis",
+    "description": "Subtopic of Cellular Transport",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELLULAR_TRANSPORT"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:40.018434"
+  },
+  {
+    "code": "BIO_BIOLOGICAL_MOLECULES",
+    "subject": "Biology",
+    "title": "Biological Molecules",
+    "description": "Prerequisite for Cellular Transport",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "BIO_CELLULAR_TRANSPORT",
+      "BIO_CELL_SIGNALING"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:40.018434"
+  },
+  {
+    "code": "BIO_TYPES_OF_CELL_SIGNALING",
+    "subject": "Biology",
+    "title": "Types of Cell Signaling",
+    "description": "Subtopic of Cell Signaling",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_SIGNALING"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:45.099571"
+  },
+  {
+    "code": "BIO_SIGNALING_MOLECULES_AND_RECEPTORS",
+    "subject": "Biology",
+    "title": "Signaling Molecules and Receptors",
+    "description": "Subtopic of Cell Signaling",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_SIGNALING"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:45.099571"
+  },
+  {
+    "code": "BIO_SIGNAL_TRANSDUCTION_PATHWAYS",
+    "subject": "Biology",
+    "title": "Signal Transduction Pathways",
+    "description": "Subtopic of Cell Signaling",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_SIGNALING"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:45.099571"
+  },
+  {
+    "code": "BIO_CELLULAR_RESPONSE_TO_SIGNALS",
+    "subject": "Biology",
+    "title": "Cellular Response to Signals",
+    "description": "Subtopic of Cell Signaling",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELL_SIGNALING"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:45.099571"
+  },
+  {
+    "code": "BIO_EVOLUTION_INTRODUCTION",
+    "subject": "Biology",
+    "title": "Evolution Introduction",
+    "description": "Subtopic of Biology Basics",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_BIOLOGY_BASICS"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:49.440273"
+  },
+  {
+    "code": "BIO_BASIC_CHEMISTRY",
+    "subject": "Biology",
+    "title": "Basic Chemistry",
+    "description": "Prerequisite for Biology Basics",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "BIO_BIOLOGY_BASICS"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:49.440273"
+  },
+  {
+    "code": "BIO_SCIENTIFIC_METHOD",
+    "subject": "Biology",
+    "title": "Scientific Method",
+    "description": "Prerequisite for Biology Basics",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "BIO_BIOLOGY_BASICS"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:49.440273"
+  },
+  {
+    "code": "BIO_CELL_MEMBRANE_AND_TRANSPORT",
+    "subject": "Biology",
+    "title": "Cell Membrane and Transport",
+    "description": "Subtopic of Cellular Organization",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELLULAR_ORGANIZATION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:54.049776"
+  },
+  {
+    "code": "BIO_CYTOPLASM_AND_ORGANELLES",
+    "subject": "Biology",
+    "title": "Cytoplasm and Organelles",
+    "description": "Subtopic of Cellular Organization",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELLULAR_ORGANIZATION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:54.049776"
+  },
+  {
+    "code": "BIO_CELLULAR_ORGANIZATION_IN_UNICELLULAR_AND",
+    "subject": "Biology",
+    "title": "Cellular Organization in Unicellular and Multicellular Organisms",
+    "description": "Subtopic of Cellular Organization",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_CELLULAR_ORGANIZATION"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.0,
+    "created_at": "2025-10-20T14:22:54.049776"
+  },
+  {
+    "code": "BIO_CELL_BASICS",
+    "subject": "Biology",
+    "title": "Cell Basics",
+    "description": "Prerequisite for Cellular Organization",
+    "difficulty_level": "base",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "BIO_CELLULAR_ORGANIZATION"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T14:22:54.049776"
+  }
+]

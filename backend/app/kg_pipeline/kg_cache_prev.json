@@ -1,0 +1,2812 @@
+{
+  "Physics::Mechanics Introduction::base": {
+    "subtopics": [
+      "Motion in One Dimension",
+      "Vectors and Scalars",
+      "Newton's Laws of Motion",
+      "Friction"
+    ],
+    "prerequisites": [
+      "Kinematics Basics",
+      "Basic Algebra"
+    ],
+    "objectives": [
+      "Describe the types of motion",
+      "Apply Newton's laws to simple problems",
+      "Resolve vectors into components"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "mechanics",
+      "motion",
+      "Newton's laws",
+      "vectors",
+      "kinematics"
+    ],
+    "estimated_hours": 6
+  },
+  "Chemistry::Atomic Structure::base": {
+    "subtopics": [
+      "History of Atomic Models",
+      "Subatomic Particles",
+      "Electron Configuration",
+      "Atomic Orbitals"
+    ],
+    "prerequisites": [
+      "Elements and Compounds",
+      "Basic Chemistry Concepts"
+    ],
+    "objectives": [
+      "Describe the structure of an atom",
+      "Explain the arrangement of electrons in an atom",
+      "Identify the number of protons, neutrons, and electrons in a given atom"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "atom",
+      "nucleus",
+      "electron",
+      "proton",
+      "neutron",
+      "atomic number",
+      "mass number"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Cell Biology::base": {
+    "subtopics": [
+      "Cell Structure",
+      "Cell Division",
+      "Cellular Transport",
+      "Cell Signaling"
+    ],
+    "prerequisites": [
+      "Basic Biology",
+      "Chemistry of Life"
+    ],
+    "objectives": [
+      "Describe the structure and function of cell organelles",
+      "Explain the process of cell division and its significance",
+      "Compare and contrast different types of cellular transport"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "cell membrane",
+      "cytoplasm",
+      "mitochondria",
+      "nucleus",
+      "mitosis",
+      "meiosis"
+    ],
+    "estimated_hours": 8
+  },
+  "Physics::Motion in One Dimension::base": {
+    "subtopics": [
+      "Distance and Displacement",
+      "Speed and Velocity",
+      "Acceleration",
+      "Kinematic Equations"
+    ],
+    "prerequisites": [
+      "Introduction to Physics",
+      "Mathematical Operations"
+    ],
+    "objectives": [
+      "Describe the difference between distance and displacement",
+      "Calculate speed, velocity, and acceleration",
+      "Apply kinematic equations to solve problems involving motion in one dimension"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "motion",
+      "kinematics",
+      "velocity",
+      "acceleration",
+      "displacement"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Vectors and Scalars::base": {
+    "subtopics": [
+      "Definition and Examples of Vectors and Scalars",
+      "Vector Operations",
+      "Scalar Quantities in Physics",
+      "Vector Quantities in Physics"
+    ],
+    "prerequisites": [
+      "Basic Algebra",
+      "Measurement and Units"
+    ],
+    "objectives": [
+      "Distinguish between vector and scalar quantities",
+      "Perform basic operations with vectors",
+      "Apply vector concepts to solve physics problems"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "vector",
+      "scalar",
+      "magnitude",
+      "direction",
+      "physics"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Newton's Laws of Motion::base": {
+    "subtopics": [
+      "First Law of Motion",
+      "Second Law of Motion",
+      "Third Law of Motion",
+      "Applications of Newton's Laws"
+    ],
+    "prerequisites": [
+      "Kinematics",
+      "Vectors"
+    ],
+    "objectives": [
+      "State and explain Newton's three laws of motion",
+      "Apply Newton's laws to solve problems involving forces and motion",
+      "Identify and analyze real-world examples of Newton's laws"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Newton's Laws",
+      "Motion",
+      "Force",
+      "Inertia",
+      "Acceleration",
+      "Action-Reaction"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Friction::base": {
+    "subtopics": [
+      "Types of Friction",
+      "Factors Affecting Friction",
+      "Friction in Real-Life Situations",
+      "Reducing Friction"
+    ],
+    "prerequisites": [
+      "Forces",
+      "Motion"
+    ],
+    "objectives": [
+      "Explain the concept of friction and its types",
+      "Identify factors that affect friction",
+      "Apply the concept of friction to real-life situations"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Friction",
+      "Static Friction",
+      "Kinetic Friction",
+      "Force",
+      "Motion",
+      "Surface Area"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Kinematics Basics::base": {
+    "subtopics": [
+      "Distance and Displacement",
+      "Speed and Velocity",
+      "Acceleration",
+      "Graphical Analysis of Motion"
+    ],
+    "prerequisites": [
+      "Basic Algebra",
+      "Measurement Units"
+    ],
+    "objectives": [
+      "Describe the difference between distance and displacement",
+      "Calculate average speed and velocity",
+      "Interpret motion graphs"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "kinematics",
+      "motion",
+      "velocity",
+      "acceleration",
+      "displacement"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Basic Algebra::base": {
+    "subtopics": [
+      "Linear Equations",
+      "Quadratic Equations",
+      "Graphing Functions"
+    ],
+    "prerequisites": [
+      "Basic Arithmetic",
+      "Coordinate Geometry"
+    ],
+    "objectives": [
+      "Solve linear and quadratic equations algebraically",
+      "Graph linear and quadratic functions on a coordinate plane",
+      "Apply algebraic techniques to solve physics problems"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Algebra",
+      "Equations",
+      "Functions",
+      "Graphing",
+      "Variables"
+    ],
+    "estimated_hours": 6
+  },
+  "Chemistry::History of Atomic Models::base": {
+    "subtopics": [
+      "Dalton's Atomic Theory",
+      "Thomson's Plum Pudding Model",
+      "Rutherford's Nuclear Model",
+      "Bohr's Model",
+      "Quantum Mechanical Model"
+    ],
+    "prerequisites": [
+      "Basic Chemistry Concepts",
+      "Structure of Matter"
+    ],
+    "objectives": [
+      "Describe the evolution of atomic models",
+      "Explain the key features of each atomic model",
+      "Compare and contrast different atomic models"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Atomic Theory",
+      "Dalton",
+      "Thomson",
+      "Rutherford",
+      "Bohr",
+      "Quantum Mechanics",
+      "Atomic Models"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Subatomic Particles::base": {
+    "subtopics": [
+      "Protons, Neutrons, and Electrons",
+      "Atomic Structure",
+      "Charge and Mass of Subatomic Particles"
+    ],
+    "prerequisites": [
+      "Atomic Theory",
+      "Elements and Compounds"
+    ],
+    "objectives": [
+      "Describe the properties of subatomic particles",
+      "Explain the structure of an atom",
+      "Compare the relative masses and charges of subatomic particles"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "subatomic particles",
+      "protons",
+      "neutrons",
+      "electrons",
+      "atomic structure",
+      "charge",
+      "mass"
+    ],
+    "estimated_hours": 2
+  },
+  "Chemistry::Electron Configuration::base": {
+    "subtopics": [
+      "Atomic Orbitals",
+      "Aufbau Principle",
+      "Hund's Rule",
+      "Electron Configuration Notation"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Periodic Table Basics"
+    ],
+    "objectives": [
+      "Write the electron configuration for a given atom or ion",
+      "Explain the Aufbau principle and its application",
+      "Apply Hund's rule to determine electron configuration"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "electron configuration",
+      "atomic orbitals",
+      "Aufbau principle",
+      "Hund's rule",
+      "Pauli exclusion principle"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Atomic Orbitals::base": {
+    "subtopics": [
+      "Shapes of Atomic Orbitals",
+      "Types of Atomic Orbitals",
+      "Electron Configuration and Orbitals"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Electron Configuration Basics"
+    ],
+    "objectives": [
+      "Describe the shapes and characteristics of s, p, and d orbitals",
+      "Explain how electrons fill atomic orbitals",
+      "Relate atomic orbitals to electron configuration"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "atomic orbitals",
+      "electron configuration",
+      "s orbital",
+      "p orbital",
+      "d orbital"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Elements and Compounds::base": {
+    "subtopics": [
+      "Atomic Structure",
+      "Types of Elements",
+      "Formation of Compounds",
+      "Chemical Bonding"
+    ],
+    "prerequisites": [
+      "Atomic Basics",
+      "Introduction to Chemistry"
+    ],
+    "objectives": [
+      "Identify and describe the difference between elements and compounds",
+      "Explain how elements combine to form compounds",
+      "Classify substances as elements or compounds based on their composition"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Elements",
+      "Compounds",
+      "Atoms",
+      "Molecules",
+      "Chemical Bonding"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Basic Chemistry Concepts::base": {
+    "subtopics": [
+      "Atomic Structure",
+      "Periodic Table Basics",
+      "Chemical Bonding",
+      "Chemical Reactions"
+    ],
+    "prerequisites": [
+      "Introduction to Science",
+      "Basic Physics"
+    ],
+    "objectives": [
+      "Explain the structure of an atom",
+      "Identify elements on the periodic table",
+      "Describe types of chemical bonds"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "atom",
+      "element",
+      "compound",
+      "periodic table",
+      "chemical bonding",
+      "reaction"
+    ],
+    "estimated_hours": 6
+  },
+  "Biology::Cell Structure::base": {
+    "subtopics": [
+      "Cell Membrane and Transport",
+      "Cytoplasm and Cytoskeleton",
+      "Nucleus and Gene Expression",
+      "Mitochondria and Cellular Respiration",
+      "Cellular Organelles"
+    ],
+    "prerequisites": [
+      "Basic Biology",
+      "Chemistry of Life"
+    ],
+    "objectives": [
+      "Describe the structure and function of cell membranes",
+      "Identify and explain the roles of different cellular organelles",
+      "Explain the process of cellular respiration"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Cell membrane",
+      "Cytoplasm",
+      "Nucleus",
+      "Mitochondria",
+      "Organelles",
+      "Cellular respiration"
+    ],
+    "estimated_hours": 5
+  },
+  "Biology::Cell Division::base": {
+    "subtopics": [
+      "Mitosis",
+      "Meiosis",
+      "Cell Cycle Regulation",
+      "Cytokinesis"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "DNA Replication"
+    ],
+    "objectives": [
+      "Explain the stages of mitosis and meiosis",
+      "Compare and contrast mitosis and meiosis",
+      "Describe the importance of cell cycle regulation"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "mitosis",
+      "meiosis",
+      "cell cycle",
+      "cytokinesis",
+      "chromosomes"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Cellular Transport::base": {
+    "subtopics": [
+      "Passive Transport",
+      "Active Transport",
+      "Osmosis and Diffusion",
+      "Endocytosis and Exocytosis"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Biological Molecules"
+    ],
+    "objectives": [
+      "Explain the different types of cellular transport mechanisms",
+      "Describe the role of concentration gradients in transport",
+      "Compare and contrast passive and active transport processes"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "cell membrane",
+      "transport proteins",
+      "concentration gradient",
+      "osmosis",
+      "diffusion"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Cell Signaling::base": {
+    "subtopics": [
+      "Types of Cell Signaling",
+      "Signaling Molecules and Receptors",
+      "Signal Transduction Pathways",
+      "Cellular Response to Signals"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Biological Molecules",
+      "Cell Membrane"
+    ],
+    "objectives": [
+      "Explain the different types of cell signaling",
+      "Describe the role of signaling molecules and receptors",
+      "Outline the major steps in a signal transduction pathway"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "cell signaling",
+      "signal transduction",
+      "signaling molecules",
+      "receptors",
+      "cell membrane",
+      "cellular response"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Basic Biology::base": {
+    "subtopics": [
+      "Cell Structure",
+      "Cell Division",
+      "Genetics Basics",
+      "Evolution Introduction"
+    ],
+    "prerequisites": [
+      "Introduction to Science",
+      "Basic Chemistry"
+    ],
+    "objectives": [
+      "Describe the basic structure and function of cells",
+      "Explain the process of cell division and its significance",
+      "Identify the fundamental principles of genetics and heredity"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "cells",
+      "cell division",
+      "genetics",
+      "evolution",
+      "biology basics"
+    ],
+    "estimated_hours": 8
+  },
+  "Biology::Chemistry of Life::base": {
+    "subtopics": [
+      "Atomic Structure and Chemical Bonding",
+      "Water and Its Importance",
+      "Biological Macromolecules",
+      "pH and Buffers"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Basic Chemistry Concepts"
+    ],
+    "objectives": [
+      "Explain the role of water in living organisms",
+      "Describe the structure and function of biological macromolecules",
+      "Understand the importance of pH and buffers in biological systems"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "biological macromolecules",
+      "pH",
+      "buffers",
+      "water",
+      "chemical bonding"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Distance and Displacement::level_1": {
+    "subtopics": [
+      "Definition and Difference",
+      "Calculating Distance and Displacement",
+      "Graphical Representation"
+    ],
+    "prerequisites": [
+      "Motion",
+      "Units and Measurement"
+    ],
+    "objectives": [
+      "Distinguish between distance and displacement",
+      "Calculate distance and displacement for given motions",
+      "Represent distance and displacement graphically"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "distance",
+      "displacement",
+      "motion",
+      "kinematics",
+      "graphical analysis"
+    ],
+    "estimated_hours": 3
+  },
+  "Physics::Speed and Velocity::level_1": {
+    "subtopics": [
+      "Definition and Difference between Speed and Velocity",
+      "Calculating Speed and Velocity",
+      "Instantaneous and Average Speed/Velocity"
+    ],
+    "prerequisites": [
+      "Motion in One Dimension",
+      "Basic Algebra"
+    ],
+    "objectives": [
+      "Distinguish between speed and velocity",
+      "Calculate average and instantaneous speed/velocity",
+      "Apply the concepts to real-life problems"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "speed",
+      "velocity",
+      "motion",
+      "kinematics",
+      "displacement",
+      "distance"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Acceleration::level_1": {
+    "subtopics": [
+      "Uniform Acceleration",
+      "Non-Uniform Acceleration",
+      "Graphical Analysis of Acceleration",
+      "Equations of Motion"
+    ],
+    "prerequisites": [
+      "Motion",
+      "Velocity",
+      "Vectors"
+    ],
+    "objectives": [
+      "Define acceleration and its units",
+      "Calculate acceleration using equations of motion",
+      "Analyze velocity-time graphs to determine acceleration"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "acceleration",
+      "velocity",
+      "motion",
+      "equations of motion",
+      "graphical analysis"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Kinematic Equations::level_1": {
+    "subtopics": [
+      "Displacement and Velocity",
+      "Acceleration and its Types",
+      "Kinematic Equations Derivation",
+      "Applications of Kinematic Equations"
+    ],
+    "prerequisites": [
+      "Motion in One Dimension",
+      "Vectors"
+    ],
+    "objectives": [
+      "Derive and apply kinematic equations to solve problems involving uniformly accelerated motion",
+      "Analyze motion graphs to determine kinematic variables",
+      "Use kinematic equations to predict the motion of objects"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "kinematics",
+      "equations of motion",
+      "uniform acceleration",
+      "displacement",
+      "velocity",
+      "acceleration"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Introduction to Physics::base": {
+    "subtopics": [
+      "Measurement and Units",
+      "Types of Physics",
+      "Branches of Physics",
+      "Scientific Method"
+    ],
+    "prerequisites": [
+      "Basic Mathematics",
+      "Scientific Inquiry"
+    ],
+    "objectives": [
+      "Define physics and its importance",
+      "Identify the fundamental units of measurement",
+      "Explain the scientific method and its application"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Physics",
+      "Measurement",
+      "Units",
+      "Scientific Method",
+      "Branches"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Mathematical Operations::base": {
+    "subtopics": [
+      "Vector Operations",
+      "Scalar Operations",
+      "Significant Figures",
+      "Dimensional Analysis"
+    ],
+    "prerequisites": [
+      "Algebra",
+      "Basic Physics Concepts"
+    ],
+    "objectives": [
+      "Apply mathematical operations to solve physics problems",
+      "Distinguish between scalar and vector quantities",
+      "Use significant figures to represent measurement uncertainty"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "vectors",
+      "scalars",
+      "significant figures",
+      "dimensional analysis",
+      "physics calculations"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Definition and Examples of Vectors and Scalars::base": {
+    "subtopics": [
+      "Introduction to Vectors",
+      "Introduction to Scalars",
+      "Examples of Vectors and Scalars",
+      "Vector vs Scalar Quantities"
+    ],
+    "prerequisites": [
+      "Basic Mathematics",
+      "Physical Quantities"
+    ],
+    "objectives": [
+      "Distinguish between vector and scalar quantities",
+      "Identify examples of vectors and scalars",
+      "Understand the representation of vectors"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Vector",
+      "Scalar",
+      "Magnitude",
+      "Direction",
+      "Quantity",
+      "Physics"
+    ],
+    "estimated_hours": 2
+  },
+  "Physics::Vector Operations::base": {
+    "subtopics": [
+      "Vector Addition",
+      "Vector Subtraction",
+      "Scalar Multiplication",
+      "Vector Resolution"
+    ],
+    "prerequisites": [
+      "Basic Algebra",
+      "Coordinate Geometry",
+      "Introduction to Scalars and Vectors"
+    ],
+    "objectives": [
+      "Add and subtract vectors graphically and algebraically",
+      "Resolve vectors into their components",
+      "Apply scalar multiplication to vectors"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Vector",
+      "Scalar",
+      "Addition",
+      "Subtraction",
+      "Resolution",
+      "Multiplication"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Scalar Quantities in Physics::base": {
+    "subtopics": [
+      "Definition of Scalar Quantities",
+      "Examples of Scalar Quantities",
+      "Operations with Scalar Quantities",
+      "Distinguishing Scalars from Vectors"
+    ],
+    "prerequisites": [
+      "Introduction to Physics",
+      "Basic Mathematical Operations"
+    ],
+    "objectives": [
+      "Define scalar quantities and provide examples",
+      "Perform arithmetic operations with scalar quantities",
+      "Distinguish between scalar and vector quantities"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "scalar quantity",
+      "physics basics",
+      "vector quantity",
+      "arithmetic operations"
+    ],
+    "estimated_hours": 2
+  },
+  "Physics::Vector Quantities in Physics::base": {
+    "subtopics": [
+      "Introduction to Vectors",
+      "Vector Addition and Subtraction",
+      "Scalar Multiplication of Vectors",
+      "Resolution of Vectors"
+    ],
+    "prerequisites": [
+      "Basic Algebra",
+      "Introduction to Physics",
+      "Measurement and Units"
+    ],
+    "objectives": [
+      "Define vector quantities and distinguish them from scalar quantities",
+      "Perform vector addition and subtraction graphically and algebraically",
+      "Resolve vectors into their components"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Vector",
+      "Scalar",
+      "Magnitude",
+      "Direction",
+      "Vector Addition",
+      "Vector Resolution"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Measurement and Units::base": {
+    "subtopics": [
+      "Units and Dimensions",
+      "Measurement Techniques",
+      "Significant Figures",
+      "Unit Conversions"
+    ],
+    "prerequisites": [
+      "Basic Mathematics",
+      "Introduction to Physics"
+    ],
+    "objectives": [
+      "Explain the importance of measurement in physics",
+      "Identify and use the correct units for physical quantities",
+      "Perform unit conversions between different systems"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "units",
+      "measurement",
+      "dimensions",
+      "significant figures",
+      "conversions"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::First Law of Motion::level_1": {
+    "subtopics": [
+      "Newton's First Law Statement",
+      "Inertia and Mass",
+      "Examples and Applications",
+      "Relation to Real-Life Situations"
+    ],
+    "prerequisites": [
+      "Introduction to Forces",
+      "Basic Kinematics"
+    ],
+    "objectives": [
+      "State Newton's First Law of Motion",
+      "Explain the concept of inertia and its relation to mass",
+      "Apply the First Law to real-life situations"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Newton's Laws",
+      "Inertia",
+      "First Law of Motion",
+      "Force",
+      "Mass",
+      "Motion"
+    ],
+    "estimated_hours": 2
+  },
+  "Physics::Second Law of Motion::level_1": {
+    "subtopics": [
+      "Force and Acceleration",
+      "Mass and Acceleration",
+      "Newton's Second Law Formula",
+      "Applications of Second Law"
+    ],
+    "prerequisites": [
+      "First Law of Motion",
+      "Introduction to Forces"
+    ],
+    "objectives": [
+      "State Newton's Second Law of Motion",
+      "Apply the formula F = ma to solve problems",
+      "Analyze the relationship between force, mass, and acceleration"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Newton's Second Law",
+      "Force",
+      "Mass",
+      "Acceleration",
+      "F = ma"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Third Law of Motion::level_1": {
+    "subtopics": [
+      "Action and Reaction Forces",
+      "Examples of Third Law of Motion",
+      "Applications of Third Law"
+    ],
+    "prerequisites": [
+      "First Law of Motion",
+      "Second Law of Motion"
+    ],
+    "objectives": [
+      "State Newton's Third Law of Motion",
+      "Identify action and reaction forces in given situations",
+      "Apply the Third Law to real-life examples"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Newton's Third Law",
+      "Action and Reaction",
+      "Forces",
+      "Motion",
+      "Physics"
+    ],
+    "estimated_hours": 2
+  },
+  "Physics::Applications of Newton's Laws::level_1": {
+    "subtopics": [
+      "Friction and Newton's Laws",
+      "Circular Motion and Newton's Laws",
+      "Applications in Everyday Life"
+    ],
+    "prerequisites": [
+      "Newton's Laws of Motion",
+      "Kinematics",
+      "Vectors"
+    ],
+    "objectives": [
+      "Analyze real-world problems using Newton's Laws",
+      "Apply Newton's Laws to objects in different states of motion",
+      "Identify and calculate forces acting on objects"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Newton's Laws",
+      "Friction",
+      "Circular Motion",
+      "Force",
+      "Motion",
+      "Acceleration"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Kinematics::base": {
+    "subtopics": [
+      "Motion in One Dimension",
+      "Motion in Two Dimensions",
+      "Graphical Analysis of Motion",
+      "Relative Motion"
+    ],
+    "prerequisites": [
+      "Vectors",
+      "Basic Algebra"
+    ],
+    "objectives": [
+      "Describe the motion of an object in terms of its position, velocity, and acceleration.",
+      "Analyze motion graphs to determine kinematic quantities.",
+      "Apply kinematic equations to solve problems involving motion in one and two dimensions."
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "kinematics",
+      "motion",
+      "velocity",
+      "acceleration",
+      "displacement",
+      "trajectory"
+    ],
+    "estimated_hours": 6
+  },
+  "Physics::Vectors::base": {
+    "subtopics": [
+      "Vector Addition and Subtraction",
+      "Scalar Multiplication of Vectors",
+      "Resolution of Vectors",
+      "Vector Components"
+    ],
+    "prerequisites": [
+      "Basic Algebra",
+      "Geometry",
+      "Kinematics"
+    ],
+    "objectives": [
+      "Represent physical quantities using vectors",
+      "Perform vector operations (addition, subtraction, scalar multiplication)",
+      "Resolve vectors into components"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "vector",
+      "magnitude",
+      "direction",
+      "scalar",
+      "resultant",
+      "components"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Types of Friction::base": {
+    "subtopics": [
+      "Static Friction",
+      "Kinetic Friction",
+      "Rolling Friction",
+      "Fluid Friction"
+    ],
+    "prerequisites": [
+      "Forces",
+      "Newton's Laws of Motion"
+    ],
+    "objectives": [
+      "Identify and describe different types of friction",
+      "Explain the factors that affect frictional forces",
+      "Apply the concept of friction to real-life situations"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Friction",
+      "Static Friction",
+      "Kinetic Friction",
+      "Rolling Friction",
+      "Fluid Friction"
+    ],
+    "estimated_hours": 2
+  },
+  "Physics::Factors Affecting Friction::base": {
+    "subtopics": [
+      "Surface Roughness and Friction",
+      "Normal Force and Friction",
+      "Types of Friction",
+      "Friction and Motion"
+    ],
+    "prerequisites": [
+      "Force and Motion",
+      "Newton's Laws of Motion"
+    ],
+    "objectives": [
+      "Explain how surface roughness affects friction",
+      "Describe the relationship between normal force and friction",
+      "Identify and differentiate between static and kinetic friction"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "friction",
+      "surface roughness",
+      "normal force",
+      "static friction",
+      "kinetic friction",
+      "coefficient of friction"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Friction in Real-Life Situations::base": {
+    "subtopics": [
+      "Types of Friction",
+      "Factors Affecting Friction",
+      "Friction in Daily Life",
+      "Reducing and Increasing Friction"
+    ],
+    "prerequisites": [
+      "Forces and Newton's Laws",
+      "Motion and Kinematics"
+    ],
+    "objectives": [
+      "Explain the concept of friction and its types",
+      "Identify factors that affect friction",
+      "Apply the concept of friction to real-life situations"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Friction",
+      "Static Friction",
+      "Kinetic Friction",
+      "Force",
+      "Motion"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Reducing Friction::base": {
+    "subtopics": [
+      "Methods to Reduce Friction",
+      "Lubricants and Their Types",
+      "Surface Smoothening",
+      "Ball Bearings and Rolling Friction"
+    ],
+    "prerequisites": [
+      "Friction",
+      "Forces and Newton's Laws"
+    ],
+    "objectives": [
+      "Explain the importance of reducing friction",
+      "Describe different methods to reduce friction",
+      "Apply the concept of friction reduction in real-life scenarios"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Friction",
+      "Lubricants",
+      "Surface Smoothening",
+      "Ball Bearings",
+      "Rolling Friction"
+    ],
+    "estimated_hours": 2
+  },
+  "Physics::Forces::base": {
+    "subtopics": [
+      "Types of Forces",
+      "Newton's Laws of Motion",
+      "Friction",
+      "Normal Force and Tension"
+    ],
+    "prerequisites": [
+      "Motion",
+      "Vectors"
+    ],
+    "objectives": [
+      "Identify and describe different types of forces",
+      "Apply Newton's Laws to solve problems",
+      "Analyze forces acting on an object"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Force",
+      "Newton's Laws",
+      "Friction",
+      "Normal Force",
+      "Tension",
+      "Motion"
+    ],
+    "estimated_hours": 6
+  },
+  "Physics::Motion::base": {
+    "subtopics": [
+      "Types of Motion",
+      "Distance and Displacement",
+      "Speed and Velocity",
+      "Acceleration"
+    ],
+    "prerequisites": [
+      "Measurement",
+      "Vectors"
+    ],
+    "objectives": [
+      "Describe different types of motion",
+      "Calculate speed, velocity, and acceleration",
+      "Apply equations of motion to solve problems"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Motion",
+      "Distance",
+      "Displacement",
+      "Speed",
+      "Velocity",
+      "Acceleration"
+    ],
+    "estimated_hours": 6
+  },
+  "Physics::Graphical Analysis of Motion::base": {
+    "subtopics": [
+      "Displacement-Time Graphs",
+      "Velocity-Time Graphs",
+      "Acceleration-Time Graphs",
+      "Interpreting Graphical Representations"
+    ],
+    "prerequisites": [
+      "Kinematics",
+      "Basic Algebra",
+      "Graphing Basics"
+    ],
+    "objectives": [
+      "Interpret displacement-time, velocity-time, and acceleration-time graphs",
+      "Calculate velocity, acceleration, and displacement from graphical representations",
+      "Analyze motion using graphical analysis"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "graphical analysis",
+      "motion",
+      "kinematics",
+      "displacement",
+      "velocity",
+      "acceleration",
+      "graphs"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Measurement Units::base": {
+    "subtopics": [
+      "Fundamental Units",
+      "Derived Units",
+      "Unit Conversion",
+      "Measurement Errors"
+    ],
+    "prerequisites": [
+      "Basic Algebra",
+      "Scientific Notation"
+    ],
+    "objectives": [
+      "Identify and explain the fundamental and derived units in the SI system",
+      "Convert between different units of measurement",
+      "Apply unit conversion to solve problems in physics"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "SI Units",
+      "Measurement",
+      "Unit Conversion",
+      "Fundamental Units",
+      "Derived Units"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Linear Equations::base": {
+    "subtopics": [
+      "Graphing Linear Equations",
+      "Solving Linear Equations Algebraically",
+      "Applications of Linear Equations in Physics"
+    ],
+    "prerequisites": [
+      "Algebra Basics",
+      "Coordinate Geometry"
+    ],
+    "objectives": [
+      "Solve linear equations using algebraic methods",
+      "Graph linear equations on a coordinate plane",
+      "Apply linear equations to real-world physics problems"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "linear equations",
+      "slope",
+      "y-intercept",
+      "graphing",
+      "algebra"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Quadratic Equations::base": {
+    "subtopics": [
+      "Solving Quadratic Equations",
+      "Graphing Quadratic Functions",
+      "Applications of Quadratic Equations in Physics"
+    ],
+    "prerequisites": [
+      "Algebra",
+      "Kinematics"
+    ],
+    "objectives": [
+      "Solve quadratic equations using factoring, quadratic formula, and graphing",
+      "Analyze the motion of objects using quadratic equations",
+      "Apply quadratic equations to real-world physics problems"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "quadratic equation",
+      "physics",
+      "motion",
+      "projectile",
+      "parabola",
+      "kinematics"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Graphing Functions::base": {
+    "subtopics": [
+      "Linear Motion Graphs",
+      "Velocity-Time Graphs",
+      "Acceleration-Time Graphs",
+      "Graphing Simple Harmonic Motion"
+    ],
+    "prerequisites": [
+      "Kinematics",
+      "Functions and Graphs",
+      "Basic Algebra"
+    ],
+    "objectives": [
+      "Interpret displacement-time and velocity-time graphs for different types of motion",
+      "Analyze graphs to determine acceleration and displacement",
+      "Sketch graphs representing different types of motion"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "graphing",
+      "kinematics",
+      "motion",
+      "velocity",
+      "acceleration",
+      "displacement"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Basic Arithmetic::base": {
+    "subtopics": [
+      "Significant Figures",
+      "Unit Conversion",
+      "Order of Operations"
+    ],
+    "prerequisites": [
+      "Mathematics Basics",
+      "Measurement Techniques"
+    ],
+    "objectives": [
+      "Apply the rules of significant figures to measurement data",
+      "Convert between different units of measurement",
+      "Use the order of operations to simplify mathematical expressions"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Significant Figures",
+      "Unit Conversion",
+      "Order of Operations",
+      "Measurement",
+      "Physics Calculations"
+    ],
+    "estimated_hours": 4
+  },
+  "Physics::Coordinate Geometry::base": {
+    "subtopics": [
+      "Cartesian Coordinates",
+      "Distance and Section Formulae",
+      "Equation of a Line",
+      "Slope and Intercept"
+    ],
+    "prerequisites": [
+      "Algebra",
+      "Geometry"
+    ],
+    "objectives": [
+      "Plot points on a coordinate plane",
+      "Calculate distances and midpoints between points",
+      "Determine the equation of a line given certain conditions"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "coordinate geometry",
+      "Cartesian coordinates",
+      "distance formula",
+      "section formula",
+      "slope",
+      "intercept"
+    ],
+    "estimated_hours": 6
+  },
+  "Chemistry::Dalton's Atomic Theory::level_1": {
+    "subtopics": [
+      "Postulates of Dalton's Atomic Theory",
+      "Limitations of Dalton's Atomic Theory",
+      "Evidence Supporting Dalton's Atomic Theory"
+    ],
+    "prerequisites": [
+      "Atomic Structure Basics",
+      "Elements and Compounds"
+    ],
+    "objectives": [
+      "Explain the main postulates of Dalton's Atomic Theory",
+      "Identify the limitations of Dalton's Atomic Theory",
+      "Apply Dalton's Atomic Theory to simple chemical reactions"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Dalton's Atomic Theory",
+      "Atomic Theory",
+      "Elements",
+      "Compounds",
+      "Chemical Reactions"
+    ],
+    "estimated_hours": 2
+  },
+  "Chemistry::Thomson's Plum Pudding Model::level_1": {
+    "subtopics": [
+      "Structure of Atoms",
+      "History of Atomic Models",
+      "Thomson's Experiment",
+      "Limitations of Plum Pudding Model"
+    ],
+    "prerequisites": [
+      "Atomic Structure Basics",
+      "Introduction to Atoms"
+    ],
+    "objectives": [
+      "Describe Thomson's Plum Pudding Model",
+      "Explain the significance of Thomson's model in the history of atomic theory",
+      "Identify the limitations of Thomson's model"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Thomson's Plum Pudding Model",
+      "Atomic Structure",
+      "J.J. Thomson",
+      "History of Chemistry",
+      "Atomic Theory"
+    ],
+    "estimated_hours": 2
+  },
+  "Chemistry::Rutherford's Nuclear Model::level_1": {
+    "subtopics": [
+      "Structure of the Atom",
+      "Rutherford's Gold Foil Experiment",
+      "Nuclear Model Limitations"
+    ],
+    "prerequisites": [
+      "Atomic Theory",
+      "Structure of Atoms"
+    ],
+    "objectives": [
+      "Describe the key features of Rutherford's Nuclear Model",
+      "Explain the significance of Rutherford's Gold Foil Experiment",
+      "Identify the limitations of Rutherford's Nuclear Model"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Rutherford's Nuclear Model",
+      "Gold Foil Experiment",
+      "Atomic Structure",
+      "Nuclear Atom"
+    ],
+    "estimated_hours": 2
+  },
+  "Chemistry::Bohr's Model::level_1": {
+    "subtopics": [
+      "Energy Levels",
+      "Electron Transitions",
+      "Atomic Spectra",
+      "Limitations of Bohr's Model"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Electron Configuration"
+    ],
+    "objectives": [
+      "Describe the main features of Bohr's Model",
+      "Explain how electrons transition between energy levels",
+      "Calculate the energy of electrons in different energy levels"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Bohr's Model",
+      "Energy Levels",
+      "Electron Transitions",
+      "Atomic Spectra",
+      "Niels Bohr"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Quantum Mechanical Model::level_1": {
+    "subtopics": [
+      "Atomic Orbitals",
+      "Electron Configuration",
+      "Quantum Numbers",
+      "Wave-Particle Duality"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Electron Arrangement"
+    ],
+    "objectives": [
+      "Explain the principles of the Quantum Mechanical Model",
+      "Describe the shapes and characteristics of atomic orbitals",
+      "Apply quantum numbers to determine electron configuration"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Quantum Mechanics",
+      "Atomic Orbitals",
+      "Electron Configuration",
+      "Schrödinger Equation",
+      "Wave Function"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Structure of Matter::base": {
+    "subtopics": [
+      "Atomic Structure",
+      "Electronic Configuration",
+      "Types of Chemical Bonds",
+      "Molecular Geometry"
+    ],
+    "prerequisites": [
+      "Basic Chemistry Concepts",
+      "Periodic Table"
+    ],
+    "objectives": [
+      "Describe the structure of an atom",
+      "Explain how electrons are arranged in an atom",
+      "Identify types of chemical bonds and their characteristics"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "atom",
+      "electron",
+      "proton",
+      "neutron",
+      "chemical bond",
+      "molecule"
+    ],
+    "estimated_hours": 6
+  },
+  "Chemistry::Protons, Neutrons, and Electrons::base": {
+    "subtopics": [
+      "Atomic Structure",
+      "Charge and Mass of Subatomic Particles",
+      "Atomic Number and Mass Number"
+    ],
+    "prerequisites": [
+      "Atomic Theory",
+      "Elements and Compounds"
+    ],
+    "objectives": [
+      "Describe the structure of an atom",
+      "Identify the charges and relative masses of protons, neutrons, and electrons",
+      "Explain how atomic number and mass number are related to the number of subatomic particles"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "protons",
+      "neutrons",
+      "electrons",
+      "atomic structure",
+      "subatomic particles",
+      "atomic number",
+      "mass number"
+    ],
+    "estimated_hours": 2
+  },
+  "Chemistry::Charge and Mass of Subatomic Particles::base": {
+    "subtopics": [
+      "Properties of Protons, Neutrons, and Electrons",
+      "Relative Mass and Charge of Subatomic Particles",
+      "Atomic Structure Basics"
+    ],
+    "prerequisites": [
+      "Atomic Structure Introduction",
+      "Basic Chemistry Concepts"
+    ],
+    "objectives": [
+      "Identify the charge and mass of protons, neutrons, and electrons",
+      "Compare the relative masses and charges of subatomic particles",
+      "Explain the significance of subatomic particles in atomic structure"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "protons",
+      "neutrons",
+      "electrons",
+      "subatomic particles",
+      "atomic mass",
+      "atomic charge"
+    ],
+    "estimated_hours": 2
+  },
+  "Chemistry::Atomic Theory::base": {
+    "subtopics": [
+      "Structure of the Atom",
+      "Atomic Models",
+      "Isotopes and Ions",
+      "Atomic Mass"
+    ],
+    "prerequisites": [
+      "Elements and Compounds",
+      "Basic Chemistry Concepts"
+    ],
+    "objectives": [
+      "Describe the historical development of atomic theory",
+      "Explain the structure of atoms, including protons, neutrons, and electrons",
+      "Identify and describe different atomic models"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "atom",
+      "atomic theory",
+      "protons",
+      "neutrons",
+      "electrons",
+      "isotopes"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Aufbau Principle::level_1": {
+    "subtopics": [
+      "Electron Configuration",
+      "Energy Levels and Orbitals",
+      "Hund's Rule and Aufbau Principle",
+      "Exceptions to Aufbau Principle"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Electron and Energy Levels"
+    ],
+    "objectives": [
+      "Explain the Aufbau Principle and its significance",
+      "Apply the Aufbau Principle to determine electron configuration of atoms",
+      "Identify exceptions to the Aufbau Principle"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Aufbau Principle",
+      "Electron Configuration",
+      "Energy Levels",
+      "Orbitals",
+      "Hund's Rule"
+    ],
+    "estimated_hours": 2
+  },
+  "Chemistry::Hund's Rule::level_1": {
+    "subtopics": [
+      "Electron Configuration",
+      "Orbital Diagrams",
+      "Applying Hund's Rule"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Electron Shells"
+    ],
+    "objectives": [
+      "Explain Hund's Rule and its significance",
+      "Apply Hund's Rule to determine electron configuration",
+      "Draw orbital diagrams using Hund's Rule"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Hund's Rule",
+      "Electron Configuration",
+      "Orbital Diagrams",
+      "Atomic Structure",
+      "Chemistry"
+    ],
+    "estimated_hours": 2
+  },
+  "Chemistry::Electron Configuration Notation::level_1": {
+    "subtopics": [
+      "Understanding Electron Configuration",
+      "Aufbau Principle and Hund's Rule",
+      "Electron Configuration Notation for Ions"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Periodic Table Basics"
+    ],
+    "objectives": [
+      "Write the electron configuration for a given atom or ion",
+      "Apply the Aufbau principle and Hund's rule to determine electron configuration",
+      "Identify the relationship between electron configuration and the periodic table"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "electron configuration",
+      "Aufbau principle",
+      "Hund's rule",
+      "atomic orbitals",
+      "periodic table"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Periodic Table Basics::base": {
+    "subtopics": [
+      "Understanding the Periodic Table Structure",
+      "Elements and their Properties",
+      "Periodic Trends"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Elements and Compounds"
+    ],
+    "objectives": [
+      "Identify the main components of the periodic table",
+      "Explain how elements are organized in the periodic table",
+      "Describe periodic trends in atomic radius and electronegativity"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "periodic table",
+      "elements",
+      "atomic structure",
+      "periodic trends",
+      "electronegativity"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Shapes of Atomic Orbitals::level_1": {
+    "subtopics": [
+      "s-Orbitals",
+      "p-Orbitals",
+      "d-Orbitals",
+      "f-Orbitals",
+      "Visualizing Orbital Shapes"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Electron Configuration"
+    ],
+    "objectives": [
+      "Describe the shapes of s, p, and d orbitals",
+      "Identify the number of orbitals in each subshell",
+      "Explain how orbital shapes relate to electron probability"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "atomic orbitals",
+      "s-orbitals",
+      "p-orbitals",
+      "d-orbitals",
+      "electron configuration",
+      "orbital shapes"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Types of Atomic Orbitals::level_1": {
+    "subtopics": [
+      "s-Orbitals",
+      "p-Orbitals",
+      "d-Orbitals",
+      "f-Orbitals"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Electron Configuration"
+    ],
+    "objectives": [
+      "Describe the shapes and characteristics of different types of atomic orbitals",
+      "Identify the types of orbitals associated with different energy levels",
+      "Explain how electrons occupy atomic orbitals"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Atomic Orbitals",
+      "s-Orbitals",
+      "p-Orbitals",
+      "d-Orbitals",
+      "f-Orbitals",
+      "Electron Configuration"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Electron Configuration and Orbitals::level_1": {
+    "subtopics": [
+      "Atomic Orbitals",
+      "Electron Configuration Notation",
+      "Aufbau Principle and Hund's Rule",
+      "Valence Electrons and Electron Configuration"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Periodic Table Basics"
+    ],
+    "objectives": [
+      "Explain the concept of atomic orbitals and their shapes",
+      "Write electron configurations for atoms using Aufbau principle and Hund's rule",
+      "Identify valence electrons and their role in chemical bonding"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Atomic Orbitals",
+      "Electron Configuration",
+      "Aufbau Principle",
+      "Hund's Rule",
+      "Valence Electrons"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Electron Configuration Basics::base": {
+    "subtopics": [
+      "Understanding Electron Shells",
+      "Aufbau Principle",
+      "Hund's Rule and Pauli Exclusion Principle",
+      "Writing Electron Configurations"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Periodic Table Basics"
+    ],
+    "objectives": [
+      "Identify the electron configuration of elements up to atomic number 20",
+      "Apply Aufbau principle, Hund's rule, and Pauli exclusion principle to write electron configurations",
+      "Explain the significance of electron configuration in understanding chemical properties"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "electron configuration",
+      "Aufbau principle",
+      "Hund's rule",
+      "Pauli exclusion principle",
+      "atomic orbitals"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Types of Elements::base": {
+    "subtopics": [
+      "Metals",
+      "Non-Metals",
+      "Metalloids",
+      "Noble Gases"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Periodic Table Basics"
+    ],
+    "objectives": [
+      "Identify and classify elements into metals, non-metals, and metalloids",
+      "Explain the properties of different types of elements",
+      "Compare the characteristics of metals, non-metals, and metalloids"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Elements",
+      "Metals",
+      "Non-Metals",
+      "Metalloids",
+      "Noble Gases",
+      "Periodic Table"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Formation of Compounds::base": {
+    "subtopics": [
+      "Ionic Bonding",
+      "Covalent Bonding",
+      "Chemical Reactions and Compound Formation",
+      "Properties of Compounds"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Periodic Table Basics"
+    ],
+    "objectives": [
+      "Explain how ions are formed and how they combine to form compounds",
+      "Describe the different types of chemical bonds and their characteristics",
+      "Predict the properties of compounds based on their bonding"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Ionic Bond",
+      "Covalent Bond",
+      "Compound Formation",
+      "Chemical Bonding",
+      "Ion",
+      "Molecule"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Chemical Bonding::base": {
+    "subtopics": [
+      "Ionic Bonding",
+      "Covalent Bonding",
+      "Metallic Bonding",
+      "Lewis Structures",
+      "Molecular Geometry"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Periodic Table"
+    ],
+    "objectives": [
+      "Explain the formation of different types of chemical bonds",
+      "Draw Lewis structures for simple molecules",
+      "Predict the shape of molecules using VSEPR theory"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "chemical bond",
+      "ionic bond",
+      "covalent bond",
+      "Lewis structure",
+      "VSEPR",
+      "molecular geometry"
+    ],
+    "estimated_hours": 6
+  },
+  "Chemistry::Atomic Basics::base": {
+    "subtopics": [
+      "Atomic Structure",
+      "Subatomic Particles",
+      "Electron Configuration",
+      "Atomic Models"
+    ],
+    "prerequisites": [
+      "Elements and Compounds",
+      "Scientific Measurement"
+    ],
+    "objectives": [
+      "Describe the basic structure of an atom",
+      "Identify the three main subatomic particles and their properties",
+      "Explain the concept of electron configuration"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "atom",
+      "nucleus",
+      "electron",
+      "proton",
+      "neutron",
+      "atomic number"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Introduction to Chemistry::base": {
+    "subtopics": [
+      "Branches of Chemistry",
+      "Scientific Method",
+      "Measurement in Chemistry",
+      "Laboratory Safety"
+    ],
+    "prerequisites": [
+      "Basic Physics",
+      "Mathematics"
+    ],
+    "objectives": [
+      "Define the field of chemistry and its main branches",
+      "Explain the scientific method and its application",
+      "Understand the importance of measurement and units in chemistry"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Chemistry",
+      "Scientific Method",
+      "Measurement",
+      "Laboratory Safety",
+      "Branches of Chemistry"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Chemical Reactions::base": {
+    "subtopics": [
+      "Types of Chemical Reactions",
+      "Balancing Chemical Equations",
+      "Chemical Reaction Rates",
+      "Reaction Stoichiometry"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Chemical Bonding",
+      "Moles and Molar Mass"
+    ],
+    "objectives": [
+      "Identify and classify different types of chemical reactions",
+      "Balance chemical equations using the law of conservation of mass",
+      "Explain the factors that affect chemical reaction rates"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "chemical reaction",
+      "reactant",
+      "product",
+      "stoichiometry",
+      "reaction rate",
+      "catalyst"
+    ],
+    "estimated_hours": 6
+  },
+  "Chemistry::Introduction to Science::base": {
+    "subtopics": [
+      "Branches of Science",
+      "Scientific Method",
+      "Measurement in Science",
+      "Laboratory Safety"
+    ],
+    "prerequisites": [
+      "Basic Laboratory Equipment",
+      "General Study Skills"
+    ],
+    "objectives": [
+      "Explain the main branches of science",
+      "Describe the steps of the scientific method",
+      "Identify the importance of measurement in science"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Science",
+      "Chemistry",
+      "Scientific Method",
+      "Measurement",
+      "Laboratory Safety"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Basic Physics::base": {
+    "subtopics": [
+      "Motion",
+      "Forces",
+      "Energy and Work",
+      "Momentum"
+    ],
+    "prerequisites": [
+      "Mathematics",
+      "Scientific Inquiry"
+    ],
+    "objectives": [
+      "Explain the concepts of distance, displacement, speed, and velocity",
+      "Apply Newton's laws of motion to real-world problems",
+      "Calculate work and energy in different physical systems"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Physics",
+      "Mechanics",
+      "Kinematics",
+      "Dynamics",
+      "Energy"
+    ],
+    "estimated_hours": 8
+  },
+  "Biology::Cell Membrane and Transport::base": {
+    "subtopics": [
+      "Structure of Cell Membrane",
+      "Types of Transport Across Cell Membrane",
+      "Passive Transport Mechanisms",
+      "Active Transport Mechanisms"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Basic Biology Concepts"
+    ],
+    "objectives": [
+      "Describe the fluid mosaic model of the cell membrane",
+      "Explain the difference between passive and active transport",
+      "Identify the types of passive and active transport mechanisms"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "cell membrane",
+      "transport",
+      "passive transport",
+      "active transport",
+      "diffusion",
+      "osmosis"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Cytoplasm and Cytoskeleton::base": {
+    "subtopics": [
+      "Structure and Function of Cytoplasm",
+      "Components of Cytoskeleton",
+      "Role of Cytoskeleton in Cell Movement"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Cell Membrane"
+    ],
+    "objectives": [
+      "Describe the composition and function of cytoplasm",
+      "Explain the structure and role of cytoskeleton in cells",
+      "Identify the different components of cytoskeleton"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Cytoplasm",
+      "Cytoskeleton",
+      "Microtubules",
+      "Microfilaments",
+      "Intermediate Filaments",
+      "Cell Movement"
+    ],
+    "estimated_hours": 2
+  },
+  "Biology::Nucleus and Gene Expression::base": {
+    "subtopics": [
+      "Structure of the Nucleus",
+      "Gene Expression Regulation",
+      "Transcription and Translation"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "DNA Structure and Replication"
+    ],
+    "objectives": [
+      "Explain the role of the nucleus in gene expression",
+      "Describe the process of transcription and translation",
+      "Identify factors that regulate gene expression"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Nucleus",
+      "Gene Expression",
+      "Transcription",
+      "Translation",
+      "Regulation"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Mitochondria and Cellular Respiration::base": {
+    "subtopics": [
+      "Structure of Mitochondria",
+      "Stages of Cellular Respiration",
+      "Role of Mitochondria in Energy Production"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Basic Biochemistry"
+    ],
+    "objectives": [
+      "Describe the structure and function of mitochondria",
+      "Explain the major stages of cellular respiration",
+      "Identify the role of mitochondria in energy production"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Mitochondria",
+      "Cellular Respiration",
+      "ATP",
+      "Glycolysis",
+      "Krebs Cycle",
+      "Electron Transport Chain"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Cellular Organelles::base": {
+    "subtopics": [
+      "Structure and Function of Mitochondria",
+      "Role of Endoplasmic Reticulum",
+      "Lysosomes and Cellular Digestion",
+      "Golgi Apparatus and Protein Modification"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Biological Molecules"
+    ],
+    "objectives": [
+      "Identify and describe the function of different cellular organelles",
+      "Explain the role of organelles in cellular processes",
+      "Compare and contrast the structure and function of different organelles"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Mitochondria",
+      "Endoplasmic Reticulum",
+      "Lysosomes",
+      "Golgi Apparatus",
+      "Cellular Organelles",
+      "Cell Biology"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Mitosis::level_1": {
+    "subtopics": [
+      "Cell Division",
+      "Stages of Mitosis",
+      "Importance of Mitosis",
+      "Regulation of Mitosis"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Cell Cycle"
+    ],
+    "objectives": [
+      "Describe the process of mitosis and its stages",
+      "Explain the significance of mitosis in growth and development",
+      "Identify the different phases of mitosis under a microscope"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Mitosis",
+      "Cell Division",
+      "Prophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Meiosis::level_1": {
+    "subtopics": [
+      "Meiosis I and Meiosis II",
+      "Stages of Meiosis",
+      "Meiosis and Genetic Variation",
+      "Comparison with Mitosis"
+    ],
+    "prerequisites": [
+      "Cell Division",
+      "Chromosomes and Genes"
+    ],
+    "objectives": [
+      "Describe the process of meiosis",
+      "Explain the significance of meiosis in genetic variation",
+      "Compare and contrast meiosis with mitosis"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Meiosis",
+      "Genetic Variation",
+      "Chromosomes",
+      "Crossing Over",
+      "Independent Assortment"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Cell Cycle Regulation::level_1": {
+    "subtopics": [
+      "Cell Cycle Phases",
+      "Regulation of Cell Division",
+      "Cyclin-Dependent Kinases",
+      "Checkpoints in Cell Cycle"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Mitosis",
+      "DNA Replication"
+    ],
+    "objectives": [
+      "Explain the different phases of the cell cycle",
+      "Describe the role of cyclin-dependent kinases in cell cycle regulation",
+      "Identify the importance of checkpoints in the cell cycle"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Cell Cycle",
+      "Cyclin-Dependent Kinases",
+      "Checkpoints",
+      "Mitosis",
+      "Cell Division",
+      "Regulation"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Cytokinesis::level_1": {
+    "subtopics": [
+      "Cytokinesis in Animal Cells",
+      "Cytokinesis in Plant Cells",
+      "Mechanisms of Cytokinesis",
+      "Regulation of Cytokinesis"
+    ],
+    "prerequisites": [
+      "Cell Division",
+      "Mitosis",
+      "Cell Structure"
+    ],
+    "objectives": [
+      "Describe the process of cytokinesis in animal and plant cells",
+      "Explain the differences between cytokinesis in animal and plant cells",
+      "Identify the mechanisms that regulate cytokinesis"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Cytokinesis",
+      "Cell Division",
+      "Mitosis",
+      "Cell Structure",
+      "Animal Cells",
+      "Plant Cells"
+    ],
+    "estimated_hours": 2
+  },
+  "Biology::DNA Replication::base": {
+    "subtopics": [
+      "Initiation of DNA Replication",
+      "Unwinding of DNA",
+      "Synthesis of New Strands",
+      "Proofreading and Editing"
+    ],
+    "prerequisites": [
+      "DNA Structure",
+      "Cell Cycle"
+    ],
+    "objectives": [
+      "Explain the process of DNA replication",
+      "Describe the role of enzymes in DNA replication",
+      "Identify the differences between leading and lagging strands"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "DNA replication",
+      "helicase",
+      "primase",
+      "leading strand",
+      "lagging strand",
+      "Okazaki fragments"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Passive Transport::level_1": {
+    "subtopics": [
+      "Diffusion",
+      "Osmosis",
+      "Facilitated Diffusion"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Biological Molecules"
+    ],
+    "objectives": [
+      "Explain the process of passive transport and its importance in cells",
+      "Describe the difference between diffusion and osmosis",
+      "Identify the role of facilitated diffusion in transporting molecules across cell membranes"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "passive transport",
+      "diffusion",
+      "osmosis",
+      "facilitated diffusion",
+      "cell membrane"
+    ],
+    "estimated_hours": 3
+  },
+  "Biology::Active Transport::level_1": {
+    "subtopics": [
+      "Types of Active Transport",
+      "Mechanisms of Active Transport",
+      "Importance of Active Transport in Cells"
+    ],
+    "prerequisites": [
+      "Cell Membrane Structure",
+      "Passive Transport"
+    ],
+    "objectives": [
+      "Explain the concept of active transport and its role in cellular function",
+      "Describe the different types of active transport mechanisms",
+      "Compare and contrast active transport with passive transport"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Active Transport",
+      "Cell Membrane",
+      "Transport Mechanisms",
+      "Energy Consumption",
+      "Concentration Gradient"
+    ],
+    "estimated_hours": 2
+  },
+  "Biology::Osmosis and Diffusion::level_1": {
+    "subtopics": [
+      "Types of Transport Across Cell Membranes",
+      "The Process of Diffusion",
+      "The Process of Osmosis",
+      "Effects of Osmosis on Cells"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Biological Molecules"
+    ],
+    "objectives": [
+      "Explain the difference between diffusion and osmosis",
+      "Describe how concentration gradients affect the rate of diffusion and osmosis",
+      "Predict the effects of different solutions on cells"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "diffusion",
+      "osmosis",
+      "concentration gradient",
+      "cell membrane",
+      "passive transport"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Endocytosis and Exocytosis::level_1": {
+    "subtopics": [
+      "Types of Endocytosis",
+      "Mechanism of Exocytosis",
+      "Role of Endocytosis and Exocytosis in Cells"
+    ],
+    "prerequisites": [
+      "Cell Membrane Structure",
+      "Cell Transport Mechanisms"
+    ],
+    "objectives": [
+      "Explain the process of endocytosis and exocytosis",
+      "Describe the different types of endocytosis",
+      "Compare and contrast endocytosis and exocytosis"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Endocytosis",
+      "Exocytosis",
+      "Cell Transport",
+      "Vesicle Formation",
+      "Cell Membrane"
+    ],
+    "estimated_hours": 2
+  },
+  "Biology::Biological Molecules::base": {
+    "subtopics": [
+      "Carbohydrates",
+      "Proteins",
+      "Lipids",
+      "Nucleic Acids"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Basic Chemistry"
+    ],
+    "objectives": [
+      "Identify the main types of biological molecules and their functions",
+      "Describe the structure and properties of different biological molecules",
+      "Explain the role of biological molecules in cellular processes"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "biomolecules",
+      "macromolecules",
+      "carbohydrates",
+      "proteins",
+      "lipids",
+      "nucleic acids"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Types of Cell Signaling::level_2": {
+    "subtopics": [
+      "Autocrine Signaling",
+      "Paracrine Signaling",
+      "Endocrine Signaling",
+      "Direct Contact Signaling"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Cell Membrane and Transport"
+    ],
+    "objectives": [
+      "Describe different types of cell signaling mechanisms",
+      "Explain the role of signaling molecules in cell communication",
+      "Compare and contrast different signaling pathways"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "cell signaling",
+      "autocrine",
+      "paracrine",
+      "endocrine",
+      "signaling molecules",
+      "cell communication"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Signaling Molecules and Receptors::level_2": {
+    "subtopics": [
+      "Types of Signaling Molecules",
+      "Receptor Types and Functions",
+      "Signal Transduction Pathways",
+      "Cellular Response to Signaling Molecules"
+    ],
+    "prerequisites": [
+      "Cell Structure and Function",
+      "Biological Molecules",
+      "Cell Communication"
+    ],
+    "objectives": [
+      "Explain the role of signaling molecules in cell communication",
+      "Describe the different types of receptors and their functions",
+      "Illustrate the steps involved in signal transduction pathways"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Signaling Molecules",
+      "Receptors",
+      "Signal Transduction",
+      "Cell Communication",
+      "Hormones",
+      "Neurotransmitters"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Signal Transduction Pathways::level_2": {
+    "subtopics": [
+      "Cell Signaling Mechanisms",
+      "Receptor Types and Signal Transduction",
+      "Signaling Pathways and Cellular Response",
+      "Regulation of Signal Transduction Pathways"
+    ],
+    "prerequisites": [
+      "Cell Structure and Function",
+      "Molecular Biology Basics",
+      "Cell Membrane and Transport"
+    ],
+    "objectives": [
+      "Explain the role of signal transduction pathways in cellular response to external signals",
+      "Describe the different types of receptors involved in signal transduction",
+      "Identify key components and steps in a signal transduction pathway",
+      "Analyze how signal transduction pathways are regulated and terminated"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Signal Transduction",
+      "Cell Signaling",
+      "Receptors",
+      "Signaling Pathways",
+      "Cellular Response",
+      "Signal Regulation"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Cellular Response to Signals::level_2": {
+    "subtopics": [
+      "Signal Transduction Pathways",
+      "Cell Surface Receptors",
+      "Signaling Molecules and Their Roles",
+      "Cellular Response to Hormones",
+      "Signal Amplification and Termination"
+    ],
+    "prerequisites": [
+      "Cell Structure and Function",
+      "Biological Molecules",
+      "Basic Genetics"
+    ],
+    "objectives": [
+      "Explain how cells respond to external signals through signal transduction pathways.",
+      "Identify and describe the role of different cell surface receptors in signal transduction.",
+      "Describe how signaling molecules interact with their target cells to elicit a response."
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Signal Transduction",
+      "Cell Signaling",
+      "Receptors",
+      "Hormones",
+      "Signaling Pathways",
+      "Cellular Response"
+    ],
+    "estimated_hours": 6
+  },
+  "Biology::Cell Membrane::base": {
+    "subtopics": [
+      "Structure of Cell Membrane",
+      "Functions of Cell Membrane",
+      "Transport Across Cell Membrane",
+      "Cell Membrane and Cell Signaling"
+    ],
+    "prerequisites": [
+      "Cell Structure",
+      "Basic Biochemistry"
+    ],
+    "objectives": [
+      "Describe the fluid mosaic model of the cell membrane",
+      "Explain the different types of transport across the cell membrane",
+      "Identify the role of cell membrane in cell signaling"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "cell membrane",
+      "fluid mosaic model",
+      "transport mechanisms",
+      "cell signaling",
+      "phospholipid bilayer"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Genetics Basics::base": {
+    "subtopics": [
+      "DNA Structure",
+      "Mendelian Genetics",
+      "Genetic Variation",
+      "Genotype and Phenotype"
+    ],
+    "prerequisites": [
+      "Cell Biology",
+      "Basic Biochemistry"
+    ],
+    "objectives": [
+      "Explain the structure and function of DNA",
+      "Apply Mendel's laws to predict inheritance patterns",
+      "Describe the difference between genotype and phenotype"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "DNA",
+      "Genetics",
+      "Mendel",
+      "Genotype",
+      "Phenotype",
+      "Hereditary"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Evolution Introduction::base": {
+    "subtopics": [
+      "Mechanisms of Evolution",
+      "Evidence for Evolution",
+      "Types of Evolution",
+      "Evolutionary Processes"
+    ],
+    "prerequisites": [
+      "Genetics Basics",
+      "Cell Biology",
+      "Ecology Fundamentals"
+    ],
+    "objectives": [
+      "Explain the concept of evolution and its significance in biology",
+      "Describe the different types of evidence that support evolution",
+      "Identify the key mechanisms driving evolutionary change"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "evolution",
+      "natural selection",
+      "adaptation",
+      "speciation",
+      "phylogeny"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Introduction to Science::base": {
+    "subtopics": [
+      "The Scientific Method",
+      "Branches of Science",
+      "Measurement and Units",
+      "Lab Safety"
+    ],
+    "prerequisites": [],
+    "objectives": [
+      "Explain the scientific method and its importance",
+      "Identify the main branches of science",
+      "Demonstrate lab safety protocols"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Science",
+      "Biology",
+      "Scientific Method",
+      "Lab Safety",
+      "Measurement"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Basic Chemistry::base": {
+    "subtopics": [
+      "Atomic Structure",
+      "Chemical Bonding",
+      "Chemical Reactions",
+      "Stoichiometry"
+    ],
+    "prerequisites": [
+      "Introduction to Science",
+      "Basic Physics"
+    ],
+    "objectives": [
+      "Explain the structure of atoms and their role in chemistry",
+      "Describe the types of chemical bonds and their significance",
+      "Balance simple chemical equations"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "atom",
+      "element",
+      "compound",
+      "chemical reaction",
+      "stoichiometry"
+    ],
+    "estimated_hours": 6
+  },
+  "Biology::Atomic Structure and Chemical Bonding::base": {
+    "subtopics": [
+      "Atomic Models",
+      "Electron Configuration",
+      "Chemical Bonding Types",
+      "Molecular Geometry"
+    ],
+    "prerequisites": [
+      "Elements and Compounds",
+      "Basic Chemistry"
+    ],
+    "objectives": [
+      "Describe the structure of an atom",
+      "Explain how electrons are arranged in an atom",
+      "Identify types of chemical bonds and their characteristics"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "atom",
+      "electron",
+      "chemical bond",
+      "molecule",
+      "electron configuration"
+    ],
+    "estimated_hours": 6
+  },
+  "Biology::Water and Its Importance::base": {
+    "subtopics": [
+      "Properties of Water",
+      "Water Cycle and Distribution",
+      "Importance of Water for Living Organisms",
+      "Water Conservation"
+    ],
+    "prerequisites": [
+      "Basic Chemistry",
+      "Cell Structure"
+    ],
+    "objectives": [
+      "Explain the physical and chemical properties of water",
+      "Describe the water cycle and its significance",
+      "Discuss the role of water in biological processes"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "Water Properties",
+      "Water Cycle",
+      "Hydration",
+      "Biological Importance",
+      "Conservation"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Biological Macromolecules::base": {
+    "subtopics": [
+      "Carbohydrates",
+      "Proteins",
+      "Nucleic Acids",
+      "Lipids"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Chemical Bonding",
+      "Cell Structure"
+    ],
+    "objectives": [
+      "Identify and describe the structure and function of different types of biological macromolecules",
+      "Explain the role of biological macromolecules in cellular processes",
+      "Compare and contrast the properties of different biological macromolecules"
+    ],
+    "difficulty_level": "level_1",
+    "keywords": [
+      "Macromolecules",
+      "Carbohydrates",
+      "Proteins",
+      "Nucleic Acids",
+      "Lipids",
+      "Biomolecules"
+    ],
+    "estimated_hours": 6
+  },
+  "Biology::pH and Buffers::base": {
+    "subtopics": [
+      "Understanding pH",
+      "Buffer Solutions",
+      "pH Indicators",
+      "Buffering Capacity"
+    ],
+    "prerequisites": [
+      "Atomic Structure",
+      "Chemical Bonding",
+      "Acids and Bases"
+    ],
+    "objectives": [
+      "Explain the concept of pH and its importance in biological systems",
+      "Describe the composition and function of buffer solutions",
+      "Calculate the pH of a buffer solution using the Henderson-Hasselbalch equation"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "pH",
+      "buffers",
+      "acid-base chemistry",
+      "Henderson-Hasselbalch equation",
+      "buffering capacity"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Atomic Structure::base": {
+    "subtopics": [
+      "Atomic Models",
+      "Electron Configuration",
+      "Atomic Orbitals",
+      "Protons, Neutrons, and Electrons"
+    ],
+    "prerequisites": [
+      "Elements and Compounds",
+      "Basic Chemistry"
+    ],
+    "objectives": [
+      "Describe the structure of an atom",
+      "Explain the different atomic models",
+      "Identify the number of protons, neutrons, and electrons in an atom"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "atom",
+      "nucleus",
+      "electron",
+      "proton",
+      "neutron",
+      "atomic number",
+      "mass number"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Basic Chemistry Concepts::base": {
+    "subtopics": [
+      "Atomic Structure",
+      "Chemical Bonding",
+      "Chemical Reactions",
+      "Stoichiometry"
+    ],
+    "prerequisites": [
+      "Introduction to Science",
+      "Basic Physics"
+    ],
+    "objectives": [
+      "Explain the structure of an atom and its components",
+      "Describe the types of chemical bonds and their formation",
+      "Balance simple chemical equations"
+    ],
+    "difficulty_level": "base",
+    "keywords": [
+      "atom",
+      "element",
+      "compound",
+      "chemical bond",
+      "reaction",
+      "stoichiometry"
+    ],
+    "estimated_hours": 4
+  }
+}

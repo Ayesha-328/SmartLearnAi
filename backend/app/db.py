@@ -1,7 +1,6 @@
 # app/db.py
 import os
 from mongoengine import connect
-import os
 from dotenv import load_dotenv
 
 load_dotenv()

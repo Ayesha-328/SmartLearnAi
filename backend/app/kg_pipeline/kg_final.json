@@ -1,0 +1,524 @@
+[
+  {
+    "code": "PHY_BASE",
+    "subject": "Physics",
+    "title": "Physics",
+    "description": "Fundamental principles of matter, energy, and their interactions",
+    "difficulty_level": "base",
+    "objectives": [
+      "Understand the fundamental laws governing physical phenomena",
+      "Apply mathematical models to describe and analyze physical systems",
+      "Analyze and solve problems related to mechanics, electromagnetism, and thermodynamics",
+      "Demonstrate an understanding of the principles of optics and modern physics",
+      "Conduct experiments to verify physical laws and principles"
+    ],
+    "prerequisites": [
+      "PHY_GEOMETRY",
+      "PHY_BASIC_ALGEBRA",
+      "PHY_MATHEMATICS"
+    ],
+    "next_topics": [
+      "PHY_MECHANICS",
+      "PHY_THERMODYNAMICS",
+      "PHY_ELECTROMAGNETISM",
+      "PHY_OPTICS",
+      "PHY_MODERN_PHYSICS",
+      "PHY_WAVES_AND_OSCILLATIONS"
+    ],
+    "keywords": [
+      "Kinematics",
+      "Dynamics",
+      "Energy",
+      "Momentum",
+      "Electricity",
+      "Magnetism",
+      "Thermodynamics",
+      "Optics",
+      "Quantum Mechanics",
+      "Relativity"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T22:35:42.163825"
+  },
+  {
+    "code": "CHM_BASE",
+    "subject": "Chemistry",
+    "title": "Chemistry",
+    "description": "Study of matter, its properties, composition, and changes",
+    "difficulty_level": "base",
+    "objectives": [
+      "Understand the fundamental principles of chemistry",
+      "Apply chemical concepts to solve problems",
+      "Analyze chemical reactions and processes",
+      "Explain the properties of matter at the atomic and molecular level"
+    ],
+    "prerequisites": [
+      "CHE_BASIC_PHYSICS",
+      "CHE_MATHEMATICS_ALGEBRA_AND_GEOMETRY"
+    ],
+    "next_topics": [
+      "CHE_ATOMIC_STRUCTURE",
+      "CHE_CHEMICAL_BONDING",
+      "CHE_STOICHIOMETRY",
+      "CHE_THERMODYNAMICS",
+      "CHE_CHEMICAL_KINETICS",
+      "CHE_EQUILIBRIUM",
+      "CHE_ACID_BASE_CHEMISTRY"
+    ],
+    "keywords": [
+      "Atomic Structure",
+      "Chemical Reactions",
+      "Thermodynamics",
+      "Kinetics",
+      "Equilibrium",
+      "Acid-Base",
+      "Stoichiometry",
+      "Chemical Bonding"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T22:35:42.163825"
+  },
+  {
+    "code": "BIO_BASE",
+    "subject": "Biology",
+    "title": "Biology",
+    "description": "Study of living organisms and their vital processes",
+    "difficulty_level": "base",
+    "objectives": [
+      "Explain the structure and function of cells",
+      "Describe the principles of genetics and inheritance",
+      "Understand the mechanisms of evolution and speciation",
+      "Analyze the interactions between organisms and their environment"
+    ],
+    "prerequisites": [
+      "BIO_BASIC_CHEMISTRY",
+      "BIO_UNDERSTANDING_OF_SCIENTIFIC_METHOD"
+    ],
+    "next_topics": [
+      "BIO_CELL_BIOLOGY",
+      "BIO_GENETICS",
+      "BIO_EVOLUTION",
+      "BIO_ECOLOGY",
+      "BIO_BIOLOGICAL_MOLECULES_AND_METABOLISM",
+      "BIO_HUMAN_PHYSIOLOGY",
+      "BIO_PLANT_BIOLOGY"
+    ],
+    "keywords": [
+      "Cells",
+      "Genetics",
+      "Evolution",
+      "Ecology",
+      "Biological Molecules",
+      "Metabolism",
+      "Physiology",
+      "Homeostasis"
+    ],
+    "estimated_hours": 4,
+    "created_at": "2025-10-20T22:35:42.163825"
+  },
+  {
+    "code": "PHY_MECHANICS",
+    "subject": "Physics",
+    "title": "Mechanics",
+    "description": "Subtopic of Physics",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:44.325487"
+  },
+  {
+    "code": "PHY_THERMODYNAMICS",
+    "subject": "Physics",
+    "title": "Thermodynamics",
+    "description": "Subtopic of Physics",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:44.325487"
+  },
+  {
+    "code": "PHY_ELECTROMAGNETISM",
+    "subject": "Physics",
+    "title": "Electromagnetism",
+    "description": "Subtopic of Physics",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:44.325487"
+  },
+  {
+    "code": "PHY_OPTICS",
+    "subject": "Physics",
+    "title": "Optics",
+    "description": "Subtopic of Physics",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:44.325487"
+  },
+  {
+    "code": "PHY_MODERN_PHYSICS",
+    "subject": "Physics",
+    "title": "Modern Physics",
+    "description": "Subtopic of Physics",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:44.325487"
+  },
+  {
+    "code": "PHY_WAVES_AND_OSCILLATIONS",
+    "subject": "Physics",
+    "title": "Waves and Oscillations",
+    "description": "Subtopic of Physics",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "PHY_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:44.325487"
+  },
+  {
+    "code": "PHY_MATHEMATICS",
+    "subject": "Physics",
+    "title": "Mathematics",
+    "description": "Prerequisite for Physics",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_BASE"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T22:35:44.325487"
+  },
+  {
+    "code": "PHY_BASIC_ALGEBRA",
+    "subject": "Physics",
+    "title": "Basic Algebra",
+    "description": "Prerequisite for Physics",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_BASE"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T22:35:44.325487"
+  },
+  {
+    "code": "PHY_GEOMETRY",
+    "subject": "Physics",
+    "title": "Geometry",
+    "description": "Prerequisite for Physics",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "PHY_BASE"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T22:35:44.325487"
+  },
+  {
+    "code": "CHE_ATOMIC_STRUCTURE",
+    "subject": "Chemistry",
+    "title": "Atomic Structure",
+    "description": "Subtopic of Chemistry",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHM_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:50.615493"
+  },
+  {
+    "code": "CHE_CHEMICAL_BONDING",
+    "subject": "Chemistry",
+    "title": "Chemical Bonding",
+    "description": "Subtopic of Chemistry",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHM_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:50.615493"
+  },
+  {
+    "code": "CHE_STOICHIOMETRY",
+    "subject": "Chemistry",
+    "title": "Stoichiometry",
+    "description": "Subtopic of Chemistry",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHM_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:50.615493"
+  },
+  {
+    "code": "CHE_THERMODYNAMICS",
+    "subject": "Chemistry",
+    "title": "Thermodynamics",
+    "description": "Subtopic of Chemistry",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHM_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:50.615493"
+  },
+  {
+    "code": "CHE_CHEMICAL_KINETICS",
+    "subject": "Chemistry",
+    "title": "Chemical Kinetics",
+    "description": "Subtopic of Chemistry",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHM_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:50.615493"
+  },
+  {
+    "code": "CHE_EQUILIBRIUM",
+    "subject": "Chemistry",
+    "title": "Equilibrium",
+    "description": "Subtopic of Chemistry",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHM_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:50.615493"
+  },
+  {
+    "code": "CHE_ACID_BASE_CHEMISTRY",
+    "subject": "Chemistry",
+    "title": "Acid-Base Chemistry",
+    "description": "Subtopic of Chemistry",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "CHM_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:50.615493"
+  },
+  {
+    "code": "CHE_BASIC_PHYSICS",
+    "subject": "Chemistry",
+    "title": "Basic Physics",
+    "description": "Prerequisite for Chemistry",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "CHM_BASE"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T22:35:50.615493"
+  },
+  {
+    "code": "CHE_MATHEMATICS_ALGEBRA_AND_GEOMETRY",
+    "subject": "Chemistry",
+    "title": "Mathematics (Algebra and Geometry)",
+    "description": "Prerequisite for Chemistry",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "CHM_BASE"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T22:35:50.615493"
+  },
+  {
+    "code": "BIO_CELL_BIOLOGY",
+    "subject": "Biology",
+    "title": "Cell Biology",
+    "description": "Subtopic of Biology",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:53.069166"
+  },
+  {
+    "code": "BIO_GENETICS",
+    "subject": "Biology",
+    "title": "Genetics",
+    "description": "Subtopic of Biology",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:53.069166"
+  },
+  {
+    "code": "BIO_EVOLUTION",
+    "subject": "Biology",
+    "title": "Evolution",
+    "description": "Subtopic of Biology",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:53.069166"
+  },
+  {
+    "code": "BIO_ECOLOGY",
+    "subject": "Biology",
+    "title": "Ecology",
+    "description": "Subtopic of Biology",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:53.069166"
+  },
+  {
+    "code": "BIO_BIOLOGICAL_MOLECULES_AND_METABOLISM",
+    "subject": "Biology",
+    "title": "Biological Molecules and Metabolism",
+    "description": "Subtopic of Biology",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:53.069166"
+  },
+  {
+    "code": "BIO_HUMAN_PHYSIOLOGY",
+    "subject": "Biology",
+    "title": "Human Physiology",
+    "description": "Subtopic of Biology",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:53.069166"
+  },
+  {
+    "code": "BIO_PLANT_BIOLOGY",
+    "subject": "Biology",
+    "title": "Plant Biology",
+    "description": "Subtopic of Biology",
+    "difficulty_level": "level_2",
+    "objectives": [],
+    "prerequisites": [
+      "BIO_BASE"
+    ],
+    "next_topics": [],
+    "keywords": [],
+    "estimated_hours": 2.8,
+    "created_at": "2025-10-20T22:35:53.069166"
+  },
+  {
+    "code": "BIO_BASIC_CHEMISTRY",
+    "subject": "Biology",
+    "title": "Basic Chemistry",
+    "description": "Prerequisite for Biology",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "BIO_BASE"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T22:35:53.069166"
+  },
+  {
+    "code": "BIO_UNDERSTANDING_OF_SCIENTIFIC_METHOD",
+    "subject": "Biology",
+    "title": "Understanding of Scientific Method",
+    "description": "Prerequisite for Biology",
+    "difficulty_level": "level_1",
+    "objectives": [],
+    "prerequisites": [],
+    "next_topics": [
+      "BIO_BASE"
+    ],
+    "keywords": [],
+    "estimated_hours": 1.5,
+    "created_at": "2025-10-20T22:35:53.069166"
+  }
+]

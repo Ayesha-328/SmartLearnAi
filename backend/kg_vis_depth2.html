@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 900px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 900px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "PHY_BASE", "label": "PHY_BASE", "shape": "dot"}, {"color": "#97c2fc", "id": "CHM_BASE", "label": "CHM_BASE", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_BASE", "label": "BIO_BASE", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_MOTION_IN_A_STRAIGHT_LINE", "label": "PHY_MOTION_IN_A_STRAIGHT_LINE", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_MOTION_IN_A_PLANE", "label": "PHY_MOTION_IN_A_PLANE", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_NEWTONS_LAWS_OF_MOTION", "label": "PHY_NEWTONS_LAWS_OF_MOTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_FRICTION", "label": "PHY_FRICTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_KINEMATICS_BASICS", "label": "PHY_KINEMATICS_BASICS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_VECTORS", "label": "PHY_VECTORS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ATOMIC_MODELS", "label": "CHE_ATOMIC_MODELS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ELECTRON_CONFIGURATION", "label": "CHE_ELECTRON_CONFIGURATION", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ATOMIC_SPECTRA", "label": "CHE_ATOMIC_SPECTRA", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ISOTOPES_AND_IONS", "label": "CHE_ISOTOPES_AND_IONS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ELEMENTS_AND_COMPOUNDS", "label": "CHE_ELEMENTS_AND_COMPOUNDS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_BASIC_CHEMISTRY_CONCEPTS", "label": "CHE_BASIC_CHEMISTRY_CONCEPTS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELL_STRUCTURE", "label": "BIO_CELL_STRUCTURE", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELL_DIVISION", "label": "BIO_CELL_DIVISION", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELLULAR_TRANSPORT", "label": "BIO_CELLULAR_TRANSPORT", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELL_SIGNALING", "label": "BIO_CELL_SIGNALING", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_BIOLOGY_BASICS", "label": "BIO_BIOLOGY_BASICS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELLULAR_ORGANIZATION", "label": "BIO_CELLULAR_ORGANIZATION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_DISTANCE_AND_DISPLACEMENT", "label": "PHY_DISTANCE_AND_DISPLACEMENT", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_SPEED_AND_VELOCITY", "label": "PHY_SPEED_AND_VELOCITY", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_ACCELERATION", "label": "PHY_ACCELERATION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_EQUATIONS_OF_MOTION", "label": "PHY_EQUATIONS_OF_MOTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_KINEMATICS_INTRODUCTION", "label": "PHY_KINEMATICS_INTRODUCTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_BASIC_ALGEBRA", "label": "PHY_BASIC_ALGEBRA", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_PROJECTILE_MOTION", "label": "PHY_PROJECTILE_MOTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_CIRCULAR_MOTION", "label": "PHY_CIRCULAR_MOTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_RELATIVE_MOTION_IN_A_PLANE", "label": "PHY_RELATIVE_MOTION_IN_A_PLANE", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_FIRST_LAW_OF_MOTION", "label": "PHY_FIRST_LAW_OF_MOTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_SECOND_LAW_OF_MOTION", "label": "PHY_SECOND_LAW_OF_MOTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_THIRD_LAW_OF_MOTION", "label": "PHY_THIRD_LAW_OF_MOTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_APPLICATIONS_OF_NEWTONS_LAWS", "label": "PHY_APPLICATIONS_OF_NEWTONS_LAWS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_KINEMATICS", "label": "PHY_KINEMATICS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_FORCE", "label": "PHY_FORCE", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_TYPES_OF_FRICTION", "label": "PHY_TYPES_OF_FRICTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_FACTORS_AFFECTING_FRICTION", "label": "PHY_FACTORS_AFFECTING_FRICTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_FRICTION_IN_REAL_LIFE_SCENARIOS", "label": "PHY_FRICTION_IN_REAL_LIFE_SCENARIOS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_FORCES", "label": "PHY_FORCES", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_MOTION", "label": "PHY_MOTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_GRAPHICAL_ANALYSIS_OF_MOTION", "label": "PHY_GRAPHICAL_ANALYSIS_OF_MOTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_MEASUREMENT_UNITS", "label": "PHY_MEASUREMENT_UNITS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_VECTOR_ADDITION_AND_SUBTRACTION", "label": "PHY_VECTOR_ADDITION_AND_SUBTRACTION", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_SCALAR_AND_VECTOR_PRODUCTS", "label": "PHY_SCALAR_AND_VECTOR_PRODUCTS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_VECTOR_COMPONENTS_AND_RESOLUTION", "label": "PHY_VECTOR_COMPONENTS_AND_RESOLUTION", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_DALTONS_ATOMIC_THEORY", "label": "CHE_DALTONS_ATOMIC_THEORY", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_THOMSONS_MODEL", "label": "CHE_THOMSONS_MODEL", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_RUTHERFORDS_MODEL", "label": "CHE_RUTHERFORDS_MODEL", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_BOHRS_MODEL", "label": "CHE_BOHRS_MODEL", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_QUANTUM_MECHANICAL_MODEL", "label": "CHE_QUANTUM_MECHANICAL_MODEL", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_STRUCTURE_OF_MATTER", "label": "CHE_STRUCTURE_OF_MATTER", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ATOMIC_ORBITALS", "label": "CHE_ATOMIC_ORBITALS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_AUFBAU_PRINCIPLE", "label": "CHE_AUFBAU_PRINCIPLE", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_HUNDS_RULE", "label": "CHE_HUNDS_RULE", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ELECTRON_CONFIGURATION_NOTATION", "label": "CHE_ELECTRON_CONFIGURATION_NOTATION", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ATOMIC_STRUCTURE", "label": "CHE_ATOMIC_STRUCTURE", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_PERIODIC_TABLE_BASICS", "label": "CHE_PERIODIC_TABLE_BASICS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_EMISSION_SPECTRA", "label": "CHE_EMISSION_SPECTRA", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ABSORPTION_SPECTRA", "label": "CHE_ABSORPTION_SPECTRA", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_LINE_SPECTRA_OF_HYDROGEN_ATOM", "label": "CHE_LINE_SPECTRA_OF_HYDROGEN_ATOM", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_BOHRS_MODEL_AND_SPECTRA", "label": "CHE_BOHRS_MODEL_AND_SPECTRA", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ELECTRONS_IN_ATOMS", "label": "CHE_ELECTRONS_IN_ATOMS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_DEFINITION_AND_EXAMPLES_OF_ISOTOPES", "label": "CHE_DEFINITION_AND_EXAMPLES_OF_ISOTOPES", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_DEFINITION_AND_EXAMPLES_OF_IONS", "label": "CHE_DEFINITION_AND_EXAMPLES_OF_IONS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ISOTOPIC_NOTATION_AND_ION_CHARGE", "label": "CHE_ISOTOPIC_NOTATION_AND_ION_CHARGE", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_PROPERTIES_AND_USES_OF_ISOTOPES_AND_IONS", "label": "CHE_PROPERTIES_AND_USES_OF_ISOTOPES_AND_IONS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ATOMIC_STRUCTURE_AND_ELEMENTS", "label": "CHE_ATOMIC_STRUCTURE_AND_ELEMENTS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_TYPES_OF_COMPOUNDS", "label": "CHE_TYPES_OF_COMPOUNDS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_CHEMICAL_BONDING", "label": "CHE_CHEMICAL_BONDING", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_PROPERTIES_OF_ELEMENTS_AND_COMPOUNDS", "label": "CHE_PROPERTIES_OF_ELEMENTS_AND_COMPOUNDS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_CHEMICAL_REACTIONS", "label": "CHE_CHEMICAL_REACTIONS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_STOICHIOMETRY", "label": "CHE_STOICHIOMETRY", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_INTRODUCTION_TO_SCIENCE", "label": "CHE_INTRODUCTION_TO_SCIENCE", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_BASIC_PHYSICS", "label": "CHE_BASIC_PHYSICS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELL_MEMBRANE", "label": "BIO_CELL_MEMBRANE", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CYTOPLASM_AND_CYTOSKELETON", "label": "BIO_CYTOPLASM_AND_CYTOSKELETON", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_NUCLEUS_AND_GENETIC_MATERIAL", "label": "BIO_NUCLEUS_AND_GENETIC_MATERIAL", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_MITOCHONDRIA_AND_CELLULAR_RESPIRATION", "label": "BIO_MITOCHONDRIA_AND_CELLULAR_RESPIRATION", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_BASIC_BIOLOGY", "label": "BIO_BASIC_BIOLOGY", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_MICROSCOPY", "label": "BIO_MICROSCOPY", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_MITOSIS", "label": "BIO_MITOSIS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_MEIOSIS", "label": "BIO_MEIOSIS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELL_CYCLE_REGULATION", "label": "BIO_CELL_CYCLE_REGULATION", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CYTOKINESIS", "label": "BIO_CYTOKINESIS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_GENETICS_BASICS", "label": "BIO_GENETICS_BASICS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_PASSIVE_TRANSPORT", "label": "BIO_PASSIVE_TRANSPORT", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_ACTIVE_TRANSPORT", "label": "BIO_ACTIVE_TRANSPORT", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_OSMOSIS_AND_DIFFUSION", "label": "BIO_OSMOSIS_AND_DIFFUSION", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_ENDOCYTOSIS_AND_EXOCYTOSIS", "label": "BIO_ENDOCYTOSIS_AND_EXOCYTOSIS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_BIOLOGICAL_MOLECULES", "label": "BIO_BIOLOGICAL_MOLECULES", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_TYPES_OF_CELL_SIGNALING", "label": "BIO_TYPES_OF_CELL_SIGNALING", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_SIGNALING_MOLECULES_AND_RECEPTORS", "label": "BIO_SIGNALING_MOLECULES_AND_RECEPTORS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_SIGNAL_TRANSDUCTION_PATHWAYS", "label": "BIO_SIGNAL_TRANSDUCTION_PATHWAYS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELLULAR_RESPONSE_TO_SIGNALS", "label": "BIO_CELLULAR_RESPONSE_TO_SIGNALS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_EVOLUTION_INTRODUCTION", "label": "BIO_EVOLUTION_INTRODUCTION", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_BASIC_CHEMISTRY", "label": "BIO_BASIC_CHEMISTRY", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_SCIENTIFIC_METHOD", "label": "BIO_SCIENTIFIC_METHOD", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELL_MEMBRANE_AND_TRANSPORT", "label": "BIO_CELL_MEMBRANE_AND_TRANSPORT", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CYTOPLASM_AND_ORGANELLES", "label": "BIO_CYTOPLASM_AND_ORGANELLES", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELLULAR_ORGANIZATION_IN_UNICELLULAR_AND", "label": "BIO_CELLULAR_ORGANIZATION_IN_UNICELLULAR_AND", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELL_BASICS", "label": "BIO_CELL_BASICS", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "PHY_BASE", "to": "PHY_MOTION_IN_A_STRAIGHT_LINE"}, {"arrows": "to", "from": "PHY_BASE", "to": "PHY_MOTION_IN_A_PLANE"}, {"arrows": "to", "from": "PHY_BASE", "to": "PHY_NEWTONS_LAWS_OF_MOTION"}, {"arrows": "to", "from": "PHY_BASE", "to": "PHY_FRICTION"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_ATOMIC_MODELS"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_ELECTRON_CONFIGURATION"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_ATOMIC_SPECTRA"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_ISOTOPES_AND_IONS"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_CELL_STRUCTURE"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_CELL_DIVISION"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_CELLULAR_TRANSPORT"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_CELL_SIGNALING"}, {"arrows": "to", "from": "PHY_MOTION_IN_A_STRAIGHT_LINE", "to": "PHY_DISTANCE_AND_DISPLACEMENT"}, {"arrows": "to", "from": "PHY_MOTION_IN_A_STRAIGHT_LINE", "to": "PHY_SPEED_AND_VELOCITY"}, {"arrows": "to", "from": "PHY_MOTION_IN_A_STRAIGHT_LINE", "to": "PHY_ACCELERATION"}, {"arrows": "to", "from": "PHY_MOTION_IN_A_STRAIGHT_LINE", "to": "PHY_EQUATIONS_OF_MOTION"}, {"arrows": "to", "from": "PHY_MOTION_IN_A_STRAIGHT_LINE", "to": "PHY_MOTION_IN_A_PLANE"}, {"arrows": "to", "from": "PHY_MOTION_IN_A_PLANE", "to": "PHY_PROJECTILE_MOTION"}, {"arrows": "to", "from": "PHY_MOTION_IN_A_PLANE", "to": "PHY_CIRCULAR_MOTION"}, {"arrows": "to", "from": "PHY_MOTION_IN_A_PLANE", "to": "PHY_RELATIVE_MOTION_IN_A_PLANE"}, {"arrows": "to", "from": "PHY_MOTION_IN_A_PLANE", "to": "PHY_VECTORS"}, {"arrows": "to", "from": "PHY_NEWTONS_LAWS_OF_MOTION", "to": "PHY_FIRST_LAW_OF_MOTION"}, {"arrows": "to", "from": "PHY_NEWTONS_LAWS_OF_MOTION", "to": "PHY_SECOND_LAW_OF_MOTION"}, {"arrows": "to", "from": "PHY_NEWTONS_LAWS_OF_MOTION", "to": "PHY_THIRD_LAW_OF_MOTION"}, {"arrows": "to", "from": "PHY_NEWTONS_LAWS_OF_MOTION", "to": "PHY_APPLICATIONS_OF_NEWTONS_LAWS"}, {"arrows": "to", "from": "PHY_FRICTION", "to": "PHY_TYPES_OF_FRICTION"}, {"arrows": "to", "from": "PHY_FRICTION", "to": "PHY_FACTORS_AFFECTING_FRICTION"}, {"arrows": "to", "from": "PHY_FRICTION", "to": "PHY_FRICTION_IN_REAL_LIFE_SCENARIOS"}, {"arrows": "to", "from": "PHY_KINEMATICS_BASICS", "to": "PHY_BASE"}, {"arrows": "to", "from": "PHY_KINEMATICS_BASICS", "to": "PHY_DISTANCE_AND_DISPLACEMENT"}, {"arrows": "to", "from": "PHY_KINEMATICS_BASICS", "to": "PHY_SPEED_AND_VELOCITY"}, {"arrows": "to", "from": "PHY_KINEMATICS_BASICS", "to": "PHY_ACCELERATION"}, {"arrows": "to", "from": "PHY_KINEMATICS_BASICS", "to": "PHY_GRAPHICAL_ANALYSIS_OF_MOTION"}, {"arrows": "to", "from": "PHY_VECTORS", "to": "PHY_BASE"}, {"arrows": "to", "from": "PHY_VECTORS", "to": "PHY_MOTION_IN_A_PLANE"}, {"arrows": "to", "from": "PHY_VECTORS", "to": "PHY_NEWTONS_LAWS_OF_MOTION"}, {"arrows": "to", "from": "PHY_VECTORS", "to": "PHY_VECTOR_ADDITION_AND_SUBTRACTION"}, {"arrows": "to", "from": "PHY_VECTORS", "to": "PHY_SCALAR_AND_VECTOR_PRODUCTS"}, {"arrows": "to", "from": "PHY_VECTORS", "to": "PHY_VECTOR_COMPONENTS_AND_RESOLUTION"}, {"arrows": "to", "from": "CHE_ATOMIC_MODELS", "to": "CHE_DALTONS_ATOMIC_THEORY"}, {"arrows": "to", "from": "CHE_ATOMIC_MODELS", "to": "CHE_THOMSONS_MODEL"}, {"arrows": "to", "from": "CHE_ATOMIC_MODELS", "to": "CHE_RUTHERFORDS_MODEL"}, {"arrows": "to", "from": "CHE_ATOMIC_MODELS", "to": "CHE_BOHRS_MODEL"}, {"arrows": "to", "from": "CHE_ATOMIC_MODELS", "to": "CHE_QUANTUM_MECHANICAL_MODEL"}, {"arrows": "to", "from": "CHE_ELECTRON_CONFIGURATION", "to": "CHE_ATOMIC_ORBITALS"}, {"arrows": "to", "from": "CHE_ELECTRON_CONFIGURATION", "to": "CHE_AUFBAU_PRINCIPLE"}, {"arrows": "to", "from": "CHE_ELECTRON_CONFIGURATION", "to": "CHE_HUNDS_RULE"}, {"arrows": "to", "from": "CHE_ELECTRON_CONFIGURATION", "to": "CHE_ELECTRON_CONFIGURATION_NOTATION"}, {"arrows": "to", "from": "CHE_ATOMIC_SPECTRA", "to": "CHE_EMISSION_SPECTRA"}, {"arrows": "to", "from": "CHE_ATOMIC_SPECTRA", "to": "CHE_ABSORPTION_SPECTRA"}, {"arrows": "to", "from": "CHE_ATOMIC_SPECTRA", "to": "CHE_LINE_SPECTRA_OF_HYDROGEN_ATOM"}, {"arrows": "to", "from": "CHE_ATOMIC_SPECTRA", "to": "CHE_BOHRS_MODEL_AND_SPECTRA"}, {"arrows": "to", "from": "CHE_ISOTOPES_AND_IONS", "to": "CHE_DEFINITION_AND_EXAMPLES_OF_ISOTOPES"}, {"arrows": "to", "from": "CHE_ISOTOPES_AND_IONS", "to": "CHE_DEFINITION_AND_EXAMPLES_OF_IONS"}, {"arrows": "to", "from": "CHE_ISOTOPES_AND_IONS", "to": "CHE_ISOTOPIC_NOTATION_AND_ION_CHARGE"}, {"arrows": "to", "from": "CHE_ISOTOPES_AND_IONS", "to": "CHE_PROPERTIES_AND_USES_OF_ISOTOPES_AND_IONS"}, {"arrows": "to", "from": "CHE_ELEMENTS_AND_COMPOUNDS", "to": "CHM_BASE"}, {"arrows": "to", "from": "CHE_ELEMENTS_AND_COMPOUNDS", "to": "CHE_ATOMIC_MODELS"}, {"arrows": "to", "from": "CHE_ELEMENTS_AND_COMPOUNDS", "to": "CHE_ATOMIC_STRUCTURE_AND_ELEMENTS"}, {"arrows": "to", "from": "CHE_ELEMENTS_AND_COMPOUNDS", "to": "CHE_TYPES_OF_COMPOUNDS"}, {"arrows": "to", "from": "CHE_ELEMENTS_AND_COMPOUNDS", "to": "CHE_CHEMICAL_BONDING"}, {"arrows": "to", "from": "CHE_ELEMENTS_AND_COMPOUNDS", "to": "CHE_PROPERTIES_OF_ELEMENTS_AND_COMPOUNDS"}, {"arrows": "to", "from": "CHE_BASIC_CHEMISTRY_CONCEPTS", "to": "CHM_BASE"}, {"arrows": "to", "from": "CHE_BASIC_CHEMISTRY_CONCEPTS", "to": "CHE_ELEMENTS_AND_COMPOUNDS"}, {"arrows": "to", "from": "CHE_BASIC_CHEMISTRY_CONCEPTS", "to": "CHE_ATOMIC_STRUCTURE"}, {"arrows": "to", "from": "CHE_BASIC_CHEMISTRY_CONCEPTS", "to": "CHE_CHEMICAL_BONDING"}, {"arrows": "to", "from": "CHE_BASIC_CHEMISTRY_CONCEPTS", "to": "CHE_CHEMICAL_REACTIONS"}, {"arrows": "to", "from": "CHE_BASIC_CHEMISTRY_CONCEPTS", "to": "CHE_STOICHIOMETRY"}, {"arrows": "to", "from": "BIO_CELL_STRUCTURE", "to": "BIO_CELL_MEMBRANE"}, {"arrows": "to", "from": "BIO_CELL_STRUCTURE", "to": "BIO_CYTOPLASM_AND_CYTOSKELETON"}, {"arrows": "to", "from": "BIO_CELL_STRUCTURE", "to": "BIO_NUCLEUS_AND_GENETIC_MATERIAL"}, {"arrows": "to", "from": "BIO_CELL_STRUCTURE", "to": "BIO_MITOCHONDRIA_AND_CELLULAR_RESPIRATION"}, {"arrows": "to", "from": "BIO_CELL_STRUCTURE", "to": "BIO_CELL_DIVISION"}, {"arrows": "to", "from": "BIO_CELL_STRUCTURE", "to": "BIO_CELLULAR_TRANSPORT"}, {"arrows": "to", "from": "BIO_CELL_STRUCTURE", "to": "BIO_CELL_SIGNALING"}, {"arrows": "to", "from": "BIO_CELL_DIVISION", "to": "BIO_MITOSIS"}, {"arrows": "to", "from": "BIO_CELL_DIVISION", "to": "BIO_MEIOSIS"}, {"arrows": "to", "from": "BIO_CELL_DIVISION", "to": "BIO_CELL_CYCLE_REGULATION"}, {"arrows": "to", "from": "BIO_CELL_DIVISION", "to": "BIO_CYTOKINESIS"}, {"arrows": "to", "from": "BIO_CELLULAR_TRANSPORT", "to": "BIO_PASSIVE_TRANSPORT"}, {"arrows": "to", "from": "BIO_CELLULAR_TRANSPORT", "to": "BIO_ACTIVE_TRANSPORT"}, {"arrows": "to", "from": "BIO_CELLULAR_TRANSPORT", "to": "BIO_OSMOSIS_AND_DIFFUSION"}, {"arrows": "to", "from": "BIO_CELLULAR_TRANSPORT", "to": "BIO_ENDOCYTOSIS_AND_EXOCYTOSIS"}, {"arrows": "to", "from": "BIO_CELL_SIGNALING", "to": "BIO_TYPES_OF_CELL_SIGNALING"}, {"arrows": "to", "from": "BIO_CELL_SIGNALING", "to": "BIO_SIGNALING_MOLECULES_AND_RECEPTORS"}, {"arrows": "to", "from": "BIO_CELL_SIGNALING", "to": "BIO_SIGNAL_TRANSDUCTION_PATHWAYS"}, {"arrows": "to", "from": "BIO_CELL_SIGNALING", "to": "BIO_CELLULAR_RESPONSE_TO_SIGNALS"}, {"arrows": "to", "from": "BIO_BIOLOGY_BASICS", "to": "BIO_BASE"}, {"arrows": "to", "from": "BIO_BIOLOGY_BASICS", "to": "BIO_CELL_STRUCTURE"}, {"arrows": "to", "from": "BIO_BIOLOGY_BASICS", "to": "BIO_CELL_DIVISION"}, {"arrows": "to", "from": "BIO_BIOLOGY_BASICS", "to": "BIO_GENETICS_BASICS"}, {"arrows": "to", "from": "BIO_BIOLOGY_BASICS", "to": "BIO_EVOLUTION_INTRODUCTION"}, {"arrows": "to", "from": "BIO_CELLULAR_ORGANIZATION", "to": "BIO_BASE"}, {"arrows": "to", "from": "BIO_CELLULAR_ORGANIZATION", "to": "BIO_CELL_STRUCTURE"}, {"arrows": "to", "from": "BIO_CELLULAR_ORGANIZATION", "to": "BIO_CELL_MEMBRANE_AND_TRANSPORT"}, {"arrows": "to", "from": "BIO_CELLULAR_ORGANIZATION", "to": "BIO_CYTOPLASM_AND_ORGANELLES"}, {"arrows": "to", "from": "BIO_CELLULAR_ORGANIZATION", "to": "BIO_CELLULAR_ORGANIZATION_IN_UNICELLULAR_AND"}, {"arrows": "to", "from": "PHY_KINEMATICS_INTRODUCTION", "to": "PHY_MOTION_IN_A_STRAIGHT_LINE"}, {"arrows": "to", "from": "PHY_BASIC_ALGEBRA", "to": "PHY_MOTION_IN_A_STRAIGHT_LINE"}, {"arrows": "to", "from": "PHY_BASIC_ALGEBRA", "to": "PHY_KINEMATICS_BASICS"}, {"arrows": "to", "from": "PHY_BASIC_ALGEBRA", "to": "PHY_VECTORS"}, {"arrows": "to", "from": "PHY_KINEMATICS", "to": "PHY_NEWTONS_LAWS_OF_MOTION"}, {"arrows": "to", "from": "PHY_FORCE", "to": "PHY_NEWTONS_LAWS_OF_MOTION"}, {"arrows": "to", "from": "PHY_FORCES", "to": "PHY_FRICTION"}, {"arrows": "to", "from": "PHY_MOTION", "to": "PHY_FRICTION"}, {"arrows": "to", "from": "PHY_MEASUREMENT_UNITS", "to": "PHY_KINEMATICS_BASICS"}, {"arrows": "to", "from": "CHE_STRUCTURE_OF_MATTER", "to": "CHE_ATOMIC_MODELS"}, {"arrows": "to", "from": "CHE_ATOMIC_STRUCTURE", "to": "CHE_ELECTRON_CONFIGURATION"}, {"arrows": "to", "from": "CHE_ATOMIC_STRUCTURE", "to": "CHE_ATOMIC_SPECTRA"}, {"arrows": "to", "from": "CHE_ATOMIC_STRUCTURE", "to": "CHE_ISOTOPES_AND_IONS"}, {"arrows": "to", "from": "CHE_ATOMIC_STRUCTURE", "to": "CHE_ELEMENTS_AND_COMPOUNDS"}, {"arrows": "to", "from": "CHE_PERIODIC_TABLE_BASICS", "to": "CHE_ELECTRON_CONFIGURATION"}, {"arrows": "to", "from": "CHE_PERIODIC_TABLE_BASICS", "to": "CHE_ISOTOPES_AND_IONS"}, {"arrows": "to", "from": "CHE_ELECTRONS_IN_ATOMS", "to": "CHE_ATOMIC_SPECTRA"}, {"arrows": "to", "from": "CHE_INTRODUCTION_TO_SCIENCE", "to": "CHE_BASIC_CHEMISTRY_CONCEPTS"}, {"arrows": "to", "from": "CHE_BASIC_PHYSICS", "to": "CHE_BASIC_CHEMISTRY_CONCEPTS"}, {"arrows": "to", "from": "BIO_CELL_MEMBRANE", "to": "BIO_CELL_SIGNALING"}, {"arrows": "to", "from": "BIO_BASIC_BIOLOGY", "to": "BIO_CELL_STRUCTURE"}, {"arrows": "to", "from": "BIO_BASIC_BIOLOGY", "to": "BIO_CELLULAR_ORGANIZATION"}, {"arrows": "to", "from": "BIO_MICROSCOPY", "to": "BIO_CELL_STRUCTURE"}, {"arrows": "to", "from": "BIO_GENETICS_BASICS", "to": "BIO_CELL_DIVISION"}, {"arrows": "to", "from": "BIO_BIOLOGICAL_MOLECULES", "to": "BIO_CELLULAR_TRANSPORT"}, {"arrows": "to", "from": "BIO_BIOLOGICAL_MOLECULES", "to": "BIO_CELL_SIGNALING"}, {"arrows": "to", "from": "BIO_BASIC_CHEMISTRY", "to": "BIO_BIOLOGY_BASICS"}, {"arrows": "to", "from": "BIO_SCIENTIFIC_METHOD", "to": "BIO_BIOLOGY_BASICS"}, {"arrows": "to", "from": "BIO_CELL_BASICS", "to": "BIO_CELLULAR_ORGANIZATION"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

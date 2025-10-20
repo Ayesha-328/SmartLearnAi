@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 900px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "PHY_BASE", "label": "PHY_BASE", "shape": "dot"}, {"color": "#97c2fc", "id": "CHM_BASE", "label": "CHM_BASE", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_BASE", "label": "BIO_BASE", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_MECHANICS", "label": "PHY_MECHANICS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_THERMODYNAMICS", "label": "PHY_THERMODYNAMICS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_ELECTROMAGNETISM", "label": "PHY_ELECTROMAGNETISM", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_OPTICS", "label": "PHY_OPTICS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_MODERN_PHYSICS", "label": "PHY_MODERN_PHYSICS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_WAVES_AND_OSCILLATIONS", "label": "PHY_WAVES_AND_OSCILLATIONS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_MATHEMATICS", "label": "PHY_MATHEMATICS", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_BASIC_ALGEBRA", "label": "PHY_BASIC_ALGEBRA", "shape": "dot"}, {"color": "#97c2fc", "id": "PHY_GEOMETRY", "label": "PHY_GEOMETRY", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ATOMIC_STRUCTURE", "label": "CHE_ATOMIC_STRUCTURE", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_CHEMICAL_BONDING", "label": "CHE_CHEMICAL_BONDING", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_STOICHIOMETRY", "label": "CHE_STOICHIOMETRY", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_THERMODYNAMICS", "label": "CHE_THERMODYNAMICS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_CHEMICAL_KINETICS", "label": "CHE_CHEMICAL_KINETICS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_EQUILIBRIUM", "label": "CHE_EQUILIBRIUM", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_ACID_BASE_CHEMISTRY", "label": "CHE_ACID_BASE_CHEMISTRY", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_BASIC_PHYSICS", "label": "CHE_BASIC_PHYSICS", "shape": "dot"}, {"color": "#97c2fc", "id": "CHE_MATHEMATICS_ALGEBRA_AND_GEOMETRY", "label": "CHE_MATHEMATICS_ALGEBRA_AND_GEOMETRY", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_CELL_BIOLOGY", "label": "BIO_CELL_BIOLOGY", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_GENETICS", "label": "BIO_GENETICS", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_EVOLUTION", "label": "BIO_EVOLUTION", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_ECOLOGY", "label": "BIO_ECOLOGY", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_BIOLOGICAL_MOLECULES_AND_METABOLISM", "label": "BIO_BIOLOGICAL_MOLECULES_AND_METABOLISM", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_HUMAN_PHYSIOLOGY", "label": "BIO_HUMAN_PHYSIOLOGY", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_PLANT_BIOLOGY", "label": "BIO_PLANT_BIOLOGY", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_BASIC_CHEMISTRY", "label": "BIO_BASIC_CHEMISTRY", "shape": "dot"}, {"color": "#97c2fc", "id": "BIO_UNDERSTANDING_OF_SCIENTIFIC_METHOD", "label": "BIO_UNDERSTANDING_OF_SCIENTIFIC_METHOD", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "PHY_BASE", "to": "PHY_MECHANICS"}, {"arrows": "to", "from": "PHY_BASE", "to": "PHY_THERMODYNAMICS"}, {"arrows": "to", "from": "PHY_BASE", "to": "PHY_ELECTROMAGNETISM"}, {"arrows": "to", "from": "PHY_BASE", "to": "PHY_OPTICS"}, {"arrows": "to", "from": "PHY_BASE", "to": "PHY_MODERN_PHYSICS"}, {"arrows": "to", "from": "PHY_BASE", "to": "PHY_WAVES_AND_OSCILLATIONS"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_ATOMIC_STRUCTURE"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_CHEMICAL_BONDING"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_STOICHIOMETRY"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_THERMODYNAMICS"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_CHEMICAL_KINETICS"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_EQUILIBRIUM"}, {"arrows": "to", "from": "CHM_BASE", "to": "CHE_ACID_BASE_CHEMISTRY"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_CELL_BIOLOGY"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_GENETICS"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_EVOLUTION"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_ECOLOGY"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_BIOLOGICAL_MOLECULES_AND_METABOLISM"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_HUMAN_PHYSIOLOGY"}, {"arrows": "to", "from": "BIO_BASE", "to": "BIO_PLANT_BIOLOGY"}, {"arrows": "to", "from": "PHY_MATHEMATICS", "to": "PHY_BASE"}, {"arrows": "to", "from": "PHY_BASIC_ALGEBRA", "to": "PHY_BASE"}, {"arrows": "to", "from": "PHY_GEOMETRY", "to": "PHY_BASE"}, {"arrows": "to", "from": "CHE_BASIC_PHYSICS", "to": "CHM_BASE"}, {"arrows": "to", "from": "CHE_MATHEMATICS_ALGEBRA_AND_GEOMETRY", "to": "CHM_BASE"}, {"arrows": "to", "from": "BIO_BASIC_CHEMISTRY", "to": "BIO_BASE"}, {"arrows": "to", "from": "BIO_UNDERSTANDING_OF_SCIENTIFIC_METHOD", "to": "BIO_BASE"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

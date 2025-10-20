@@ -1,0 +1,104 @@
+{
+  "Physics::Physics::base": {
+    "subtopics": [
+      "Mechanics",
+      "Thermodynamics",
+      "Electromagnetism",
+      "Optics",
+      "Modern Physics",
+      "Waves and Oscillations"
+    ],
+    "prerequisites": [
+      "Mathematics",
+      "Basic Algebra",
+      "Geometry"
+    ],
+    "objectives": [
+      "Understand the fundamental laws governing physical phenomena",
+      "Apply mathematical models to describe and analyze physical systems",
+      "Analyze and solve problems related to mechanics, electromagnetism, and thermodynamics",
+      "Demonstrate an understanding of the principles of optics and modern physics",
+      "Conduct experiments to verify physical laws and principles"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Kinematics",
+      "Dynamics",
+      "Energy",
+      "Momentum",
+      "Electricity",
+      "Magnetism",
+      "Thermodynamics",
+      "Optics",
+      "Quantum Mechanics",
+      "Relativity"
+    ],
+    "estimated_hours": 4
+  },
+  "Chemistry::Chemistry::base": {
+    "subtopics": [
+      "Atomic Structure",
+      "Chemical Bonding",
+      "Stoichiometry",
+      "Thermodynamics",
+      "Chemical Kinetics",
+      "Equilibrium",
+      "Acid-Base Chemistry"
+    ],
+    "prerequisites": [
+      "Basic Physics",
+      "Mathematics (Algebra and Geometry)"
+    ],
+    "objectives": [
+      "Understand the fundamental principles of chemistry",
+      "Apply chemical concepts to solve problems",
+      "Analyze chemical reactions and processes",
+      "Explain the properties of matter at the atomic and molecular level"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Atomic Structure",
+      "Chemical Reactions",
+      "Thermodynamics",
+      "Kinetics",
+      "Equilibrium",
+      "Acid-Base",
+      "Stoichiometry",
+      "Chemical Bonding"
+    ],
+    "estimated_hours": 4
+  },
+  "Biology::Biology::base": {
+    "subtopics": [
+      "Cell Biology",
+      "Genetics",
+      "Evolution",
+      "Ecology",
+      "Biological Molecules and Metabolism",
+      "Human Physiology",
+      "Plant Biology"
+    ],
+    "prerequisites": [
+      "Basic Chemistry",
+      "Understanding of Scientific Method"
+    ],
+    "objectives": [
+      "Explain the structure and function of cells",
+      "Describe the principles of genetics and inheritance",
+      "Understand the mechanisms of evolution and speciation",
+      "Analyze the interactions between organisms and their environment"
+    ],
+    "difficulty_level": "level_2",
+    "keywords": [
+      "Cells",
+      "Genetics",
+      "Evolution",
+      "Ecology",
+      "Biological Molecules",
+      "Metabolism",
+      "Physiology",
+      "Homeostasis"
+    ],
+    "estimated_hours": 4
+  }
+}
