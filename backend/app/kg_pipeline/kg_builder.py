@@ -235,8 +235,6 @@ def build_graph(seed_nodes, recursive_depth=2, max_nodes=500):
 
     pbar.close()
 
-    # Rest of your function remains the same...
-    # [Keep the cycle removal and statistics code]
 
     # Populate edges data back to nodes
     for node_code in G.nodes:
@@ -250,7 +248,7 @@ def build_graph(seed_nodes, recursive_depth=2, max_nodes=500):
                 set(nodes_map[node_code].get("prerequisites", []) + prereq_nodes)
             )
 
-    # --- 🚀 NEW SECTION: Automatically Remove Cycles ---
+    # --- Automatically Remove Cycles ---
     if not nx.is_directed_acyclic_graph(G):
         print("\n⚠ WARNING: Graph contains cycles! Attempting to remove them automatically...")
         cycles = list(nx.simple_cycles(G))

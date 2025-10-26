@@ -3,15 +3,13 @@ from models import Student, KnowledgeGraphNode
 
 # Create a test document
 student = Student(
-    Student_ID="S001",
-    Name="test student",
-    Email="student@test.com",
-    Grade="10",
-    Level="base",
-    Password="test123",
-    Institute="XYZ",
-    Age=16,
-    Interests=["math", "science"]
+    name="test student",
+    email="student@test.com",
+    grade="10",
+    password="test123",
+    institute="XYZ",
+    age=16,
+    interests=["math", "science"]
 )
 student.save()
 
