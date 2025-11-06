@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime
 from pymongo import UpdateOne
-from app.models import KnowledgeGraphNode
+from backend.app.models_new import KnowledgeGraphNode
 from app.db import *
 
 IN_FILE = os.path.join(os.path.dirname(__file__), "kg_final.json")

@@ -1,8 +1,24 @@
 from mongoengine import (
 Document, StringField, IntField, ListField, ReferenceField,
-FloatField, DateTimeField, EmbeddedDocument, BooleanField
+FloatField, DateTimeField, EmbeddedDocument,EmbeddedDocumentField, BooleanField
 )
 from datetime import datetime
+
+# stores a list of transcript segments for a video
+class TranscriptSegment(EmbeddedDocument):
+    start = FloatField()        # seconds
+    duration = FloatField()     # seconds
+    text = StringField()
+
+# stores video transcripts linked to KG nodes
+class VideoTranscript(Document):
+    youtube_id = StringField(required=True, unique=True)
+    kg_node = ReferenceField('KnowledgeGraphNode')   # link back to KG node (optional)
+    language = StringField(default="en")
+    full_text = StringField()
+    segments = ListField(EmbeddedDocumentField(TranscriptSegment))
+    confidence = FloatField()
+    fetched_at = DateTimeField(default=datetime.utcnow)
 
 # ======================
 # Knowledge Graph Node
@@ -21,6 +37,8 @@ class KnowledgeGraphNode(Document):
 	estimated_hours = FloatField()
 	code = StringField(unique=True)
 	createdAt = DateTimeField(default=datetime.utcnow)
+	videos = ListField(StringField()) # URLs to videos
+	
 
 # ======================
 # Student
@@ -57,6 +75,7 @@ class QuizQuestion(Document):
 	student_answer = StringField()
 	student_ID = ReferenceField(Student)
 	response_time_expected = FloatField() # in seconds
+	category = StringField(choices=["why", "what", "when", "where", "who", "how"])
 	
 # ======================
 # Quiz
@@ -105,6 +124,7 @@ class KnowledgeGraphTopicMetrics(Document):
 	first_attempt_accuracy = FloatField()
 	accuracy_trend = FloatField()
 	error_pattern = StringField()
+	createdAt = DateTimeField(default=datetime.utcnow)
 
 # ======================
 # Session

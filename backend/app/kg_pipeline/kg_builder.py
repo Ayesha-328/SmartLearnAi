@@ -18,26 +18,6 @@ if os.path.exists(CACHE_FILE):
 else:
     CACHE = {}
 
-# PROMPT_TEMPLATE = """
-# You are an educational curriculum assistant specialized for Grades 9-12 science.
-# Input topic: "{topic}" (subject: {subject}, current difficulty level: {level}).
-
-# Produce JSON with the following keys:
-# - subtopics: list of 2-4 subtopic titles that are appropriate for this topic
-# - prerequisites: list of 2-4 prerequisite topic names that students should know before this topic
-# - objectives: list of 3-5 specific learning objectives (what students will be able to do)
-# - difficulty_level: relative difficulty of topics on each subject one of ["base", "level_1", "level_2", "level_3", "level_4"]
-#   - base: fundamental concepts, no prerequisites
-#   - level_1: basic applications (Grade 9-10)
-#   - level_2: intermediate concepts (Grade 10-11)
-#   - level_3: advanced topics (Grade 11-12)
-#   - level_4: very advanced/competitive exam level
-# - keywords: list of 4-8 important keywords for this topic
-# - estimated_hours: estimated learning time in hours (0.3 to 3)
-
-# Return ONLY valid JSON, no markdown formatting.
-# """
-
 PROMPT_TEMPLATE = """
 You are an educational curriculum designer for Grades 9-12 science. Create a comprehensive breakdown for the topic: "{topic}" in {subject}.
 

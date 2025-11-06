@@ -1,5 +1,5 @@
-from db import *
-from models import Student, KnowledgeGraphNode
+from app.db import *
+from backend.app.models_new import Student, KnowledgeGraphNode
 
 # Create a test document
 student = Student(

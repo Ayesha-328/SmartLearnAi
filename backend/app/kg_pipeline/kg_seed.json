@@ -2,21 +2,21 @@
   {
     "code" : "PHY_BASE",
     "subject": "Physics",
-    "title": "Physics",
+    "title": "Introduction to Physics",
     "description": "Fundamental principles of matter, energy, and their interactions",
     "difficulty_level": "base"
   },
   {
-    "code" : "CHM_BASE",
+    "code" : "CHE_BASE",
     "subject": "Chemistry", 
-    "title": "Chemistry",
+    "title": "Introduction to Chemistry",
     "description": "Study of matter, its properties, composition, and changes",
     "difficulty_level": "base"
   },
   {
     "code" : "BIO_BASE",
     "subject": "Biology",
-    "title": "Biology", 
+    "title": "Introduction to Biology", 
     "description": "Study of living organisms and their vital processes",
     "difficulty_level": "base"
   }
