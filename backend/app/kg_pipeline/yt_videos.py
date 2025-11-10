@@ -853,8 +853,7 @@ def get_video_transcript_and_quiz(code_or_topic, num_questions=10, validate_with
     """
     Comprehensive function that returns video, transcript, and quiz for a topic.
     
-    This is a convenience function that combines get_video_and_transcript() 
-    with generate_quiz_from_transcript().
+    Combines get_video_and_transcript() with generate_quiz_from_transcript().
     
     Args:
         code_or_topic: KG node code or topic name
@@ -874,19 +873,31 @@ def get_video_transcript_and_quiz(code_or_topic, num_questions=10, validate_with
             'educational_quality': str,
             'num_questions': int,
             'quiz_id': str,
-            'topic': str
+            'topic': str,
+            'status': str  # always present
         }
     """
     
     # Step 1: Get video and transcript
     video_result = get_video_and_transcript(code_or_topic, validate_with_llm=validate_with_llm)
     
+    # Ensure all keys exist to avoid KeyErrors
+    video_result.setdefault('youtube_id', None)
+    video_result.setdefault('youtube_url', None)
+    video_result.setdefault('transcript', '')
+    video_result.setdefault('status', 'ok')
+    video_result.setdefault('confidence', 0.0)
+    video_result.setdefault('educational_quality', 'unknown')
+    
+    # If no transcript, return early with empty quiz
     if not video_result['transcript']:
         return {
             **video_result,
             'quiz': [],
             'quiz_status': 'no_transcript_for_quiz',
-            'num_questions': 0
+            'num_questions': 0,
+            'quiz_id': None,
+            'topic': code_or_topic
         }
     
     # Step 2: Get or generate quiz
@@ -906,6 +917,13 @@ def get_video_transcript_and_quiz(code_or_topic, num_questions=10, validate_with
         force_regenerate=force_regenerate_quiz
     )
     
+    # Ensure quiz_result has safe defaults
+    quiz_result.setdefault('quiz', [])
+    quiz_result.setdefault('source', 'error')
+    quiz_result.setdefault('num_questions', 0)
+    quiz_result.setdefault('quiz_id', None)
+    quiz_result.setdefault('topic', topic)
+    
     return {
         'youtube_id': video_result['youtube_id'],
         'youtube_url': video_result['youtube_url'],
@@ -917,8 +935,10 @@ def get_video_transcript_and_quiz(code_or_topic, num_questions=10, validate_with
         'educational_quality': video_result.get('educational_quality', 'unknown'),
         'num_questions': quiz_result['num_questions'],
         'quiz_id': quiz_result.get('quiz_id'),
-        'topic': quiz_result.get('topic')
+        'topic': quiz_result.get('topic'),
+        'status': 'ok'
     }
+
 
 
 # Example usage:

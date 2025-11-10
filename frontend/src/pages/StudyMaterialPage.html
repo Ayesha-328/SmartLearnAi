@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Dashboard</title>
+    <!-- Load Inter font and Tailwind CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4338CA', // Indigo
+                        'secondary': '#E0F2F1', // Teal light
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for smooth transitions and focus */
+        .nav-item {
+            transition: all 0.2s ease-in-out;
+        }
+        .nav-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+        .active-nav-item {
+            background-color: #4f46e5;
+            color: white !important;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-10 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo/Branding -->
+                <div class="flex-shrink-0">
+                    <span class="text-3xl font-bold text-primary tracking-tight">Academia.ai</span>
+                </div>
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <button id="nav-study" data-page="study" class="nav-item text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded-lg text-sm font-medium focus:outline-none">📚 Study Material</button>
+                        <button id="nav-topic" data-page="topic" class="nav-item text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded-lg text-sm font-medium focus:outline-none">📑 Topic Deep Dive</button>
+                        <button id="nav-quiz" data-page="quiz" class="nav-item text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded-lg text-sm font-medium focus:outline-none">🧠 AI Quiz</button>
+                        <button id="nav-analytics" data-page="analytics" class="nav-item text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded-lg text-sm font-medium focus:outline-none">📈 Analytics</button>
+                    </div>
+                </div>
+                <!-- User Profile/Action -->
+                <div class="flex items-center space-x-4">
+                    <span class="text-sm font-medium text-gray-600 hidden sm:block">Welcome, Student!</span>
+                    <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg shadow-md transition duration-150 ease-in-out">
+                        Logout
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <button data-page="study" class="nav-item block text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded-lg text-base font-medium w-full text-left">📚 Study Material</button>
+                <button data-page="topic" class="nav-item block text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded-lg text-base font-medium w-full text-left">📑 Topic Deep Dive</button>
+                <button data-page="quiz" class="nav-item block text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded-lg text-base font-medium w-full text-left">🧠 AI Quiz</button>
+                <button data-page="analytics" class="nav-item block text-gray-700 hover:text-white hover:bg-primary px-3 py-2 rounded-lg text-base font-medium w-full text-left">📈 Analytics</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="py-10">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <!-- Dynamic Content Renders Here -->
+            <div id="content-area" class="bg-white p-6 md:p-10 rounded-xl shadow-2xl min-h-[60vh]">
+                <!-- Initial content will be set by JS -->
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const contentArea = document.getElementById('content-area');
+        const navButtons = document.querySelectorAll('.nav-item');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let currentPage = 'study'; // Default page
+
+        // --- Mock Content Generation ---
+
+        const mockContent = {
+            study: `
+                <div class="space-y-6">
+                    <h1 class="text-4xl font-extrabold text-primary">📚 Study Material Hub</h1>
+                    <p class="text-lg text-gray-600">Explore your assigned modules and structured lessons here. Use the filter below to jump into specific subjects or difficulty levels.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-blue-50 p-6 rounded-xl shadow-lg border border-blue-200">
+                            <h3 class="text-xl font-semibold text-blue-800">Module 1: Quantum Mechanics</h3>
+                            <p class="text-sm text-gray-500 mt-2">12 Lessons | 4h 30m total</p>
+                            <button class="mt-4 text-primary hover:text-indigo-700 font-medium">Continue Reading &rarr;</button>
+                        </div>
+                        <div class="bg-green-50 p-6 rounded-xl shadow-lg border border-green-200">
+                            <h3 class="text-xl font-semibold text-green-800">Module 2: Machine Learning Basics</h3>
+                            <p class="text-sm text-gray-500 mt-2">8 Lessons | 3h 15m total</p>
+                            <button class="mt-4 text-primary hover:text-indigo-700 font-medium">Continue Reading &rarr;</button>
+                        </div>
+                        <div class="bg-yellow-50 p-6 rounded-xl shadow-lg border border-yellow-200">
+                            <h3 class="text-xl font-semibold text-yellow-800">Module 3: Historical Economics</h3>
+                            <p class="text-sm text-gray-500 mt-2">10 Lessons | 5h 0m total</p>
+                            <button class="mt-4 text-primary hover:text-indigo-700 font-medium">Continue Reading &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            `,
+            topic: `
+                <div class="space-y-6">
+                    <h1 class="text-4xl font-extrabold text-primary">📑 Topic Deep Dive (Micro-lessons)</h1>
+                    <p class="text-lg text-gray-600">Select a specific topic to view related flashcards, supplemental videos, and in-depth notes generated by our AI.</p>
+
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-inner">
+                        <label for="topic-select" class="block text-sm font-medium text-gray-700">Choose a Topic:</label>
+                        <select id="topic-select" class="mt-1 block w-full pl-3 pr-10 py-3 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-lg rounded-lg shadow-md">
+                            <option>The Fourier Transform in Signal Processing</option>
+                            <option>The Ethical Implications of Generative AI</option>
+                            <option>Key Differences between Angular and React</option>
+                            <option>Mendelian Genetics and Punnett Squares</option>
+                        </select>
+                        <button class="mt-4 w-full bg-primary hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-150">View Deep Dive</button>
+                    </div>
+
+                    <p class="text-sm text-gray-500 pt-4">This section allows hyper-focused study beyond the main module structure.</p>
+                </div>
+            `,
+            quiz: `
+                <div class="space-y-6">
+                    <h1 class="text-4xl font-extrabold text-primary">🧠 AI Quiz Generator</h1>
+                    <p class="text-lg text-gray-600">Test your knowledge with personalized quizzes. Our AI adapts questions based on your previous performance.</p>
+
+                    <div class="bg-red-50 p-6 rounded-xl shadow-lg border-2 border-red-300 text-center space-y-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8A8 8 0 0 1 12 20zM12 7v6m0 4h.01"/></svg>
+                        <h3 class="text-2xl font-bold text-red-700">Ready for your next Challenge?</h3>
+                        <p class="text-gray-600">You have 15 outstanding questions tailored to the Quantum Mechanics module.</p>
+                        <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg shadow-xl transition duration-150 transform hover:scale-105">
+                            Start Quiz Now (15 Q's)
+                        </button>
+                    </div>
+                </div>
+            `,
+            analytics: `
+                <div class="space-y-6">
+                    <h1 class="text-4xl font-extrabold text-primary">📈 Performance Analytics</h1>
+                    <p class="text-lg text-gray-600">View detailed reports on your progress, mastery level, and time spent studying.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-xl border-l-4 border-primary">
+                            <p class="text-sm font-medium text-gray-500">Mastery Score</p>
+                            <p class="text-5xl font-bold text-primary mt-1">84%</p>
+                            <p class="text-xs text-green-600 mt-2">+3% from last week</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-xl border-l-4 border-green-500">
+                            <p class="text-sm font-medium text-gray-500">Quizzes Taken</p>
+                            <p class="text-5xl font-bold text-green-600 mt-1">45</p>
+                            <p class="text-xs text-gray-600 mt-2">Total assessments completed</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-xl border-l-4 border-yellow-500">
+                            <p class="text-sm font-medium text-gray-500">Average Time/Day</p>
+                            <p class="text-5xl font-bold text-yellow-600 mt-1">1h 15m</p>
+                            <p class="text-xs text-red-600 mt-2">Goal: 1h 30m</p>
+                        </div>
+                    </div>
+                </div>
+            `
+        };
+
+        // --- Core Application Logic ---
+
+        function renderPage(pageName) {
+            currentPage = pageName;
+            contentArea.innerHTML = mockContent[pageName];
+            updateActiveState(pageName);
+        }
+
+        function updateActiveState(activePage) {
+            navButtons.forEach(button => {
+                const page = button.getAttribute('data-page');
+                if (page === activePage) {
+                    button.classList.add('active-nav-item');
+                    button.classList.remove('text-gray-700', 'hover:text-white', 'hover:bg-primary');
+                } else {
+                    button.classList.remove('active-nav-item');
+                    button.classList.add('text-gray-700', 'hover:text-white', 'hover:bg-primary');
+                }
+            });
+        }
+
+        // --- Event Listeners ---
+
+        navButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const page = button.getAttribute('data-page');
+                renderPage(page);
+                // Close mobile menu after selection
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Initialize the first page on load
+        window.onload = function() {
+            renderPage(currentPage);
+        }
+    </script>
+
+</body>
+</html>

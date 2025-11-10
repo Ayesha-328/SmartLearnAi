@@ -1,0 +1,30 @@
+import React, { useEffect, useState, useRef, useCallback } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+  useParams,
+  useLocation,
+} from "react-router-dom";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  Cell,
+} from "recharts";
+import "./App.css"; // Import the CSS file
+
+// ... (ALL YOUR REACT COMPONENT CODE GOES HERE - KEEP ALL THE JAVASCRIPT CODE)
+// BUT REMOVE THE ENTIRE `injectedCSS` VARIABLE AND ITS USAGE
+// Remove this line: <style>{injectedCSS}</style>
+// And remove the entire `const injectedCSS = `...` section
+
+// Your entire React component code remains the same, just remove the CSS-in-JS part
